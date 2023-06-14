@@ -102,15 +102,249 @@
     </header>
     <section>
       <table>
-        <caption>테이블 설명 : 자세한 설명</caption>
+        <!-- 웹접근성 요건 추가 테이블 설명 : 자세한 설명 -->
+        <caption>뉴진스 성적표</caption>
+        <!-- 열의 가로 사이즈 -->
         <colgroup>
-          <col width="40%">
-          <col span="3">
+          <!-- span 열의 개수 -->
+          <col>
+          <col width="25%">
+          <col span="4" width="10%"> 
         </colgroup>
+        <!-- 테이블의 구분 -->
         <thead>
-          
+          <tr>
+            <th scope="col" rowspan="2" colspan="2">과목</th>
+            <th scope="col" colspan="5">1학년 11반</th>
+          </tr>
+          <tr>
+            <th scope="col">다니엘</th>
+            <th scope="col">민지</th>
+            <th scope="col">하니</th>
+            <th scope="col">해린</th>
+          </tr>
         </thead>
+        <!-- 테이블의 요약 -->
+        <tbody>
+          <tr>
+            <th scope="row" rowspan="5">공통</th>
+            <th scope="row">국어</th>
+            <td>100</td>
+            <td>100</td>
+            <td>90</td>
+            <td>90</td>
+          </tr>
+          <tr>
+            <th scope="row">수학</th>
+            <td>100</td>
+            <td>100</td>
+            <td>90</td>
+            <td>90</td>
+          </tr>
+          <tr>
+            <th scope="row">영어</th>
+            <td>100</td>
+            <td>100</td>
+            <td>90</td>
+            <td>90</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <th scope="row" colspan="2">평균</th>
+            <td>100</td>
+            <td>100</td>
+            <td>90</td>
+            <td>90</td>
+          </tr>
+        </tfoot>
       </table>
+    </section>
+    <style>
+      table, tr, td, th {
+        border: 1px solid #ff90ba;
+        border-collapse: collapse;
+      }
+      table {
+        width: 100%;
+      }
+      td {
+        height: 70px;
+      }
+      th {
+        background-color: rgb(255, 255, 255);
+        color: rgb(255, 168, 191);
+      }
+    </style>
+
+    <header>
+      <h2>목록 태그</h2>
+    </header>
+    <section>
+      <h3>좋아하는 음식</h3>
+      <!-- 순서 없는 목록 -->
+      <ul>
+        <li>떡볶이</li>
+        <li>마라탕</li>
+        <li>피자</li>
+      </ul>
+      <h3>좋아하는 동물</h3>
+      <!-- 순서 있는 목록 -->
+      <ol>
+        <li>고양이</li>
+        <li>강아지</li>
+        <li>토끼</li>
+      </ol>
+
+      <!-- nav -->
+      <h3>메인 메뉴</h3>
+      <!-- depth 1 -->
+      <ul>
+        <li>
+          탑
+          <!-- depth 2 -->
+          <ul>
+            <li>
+              블라우스
+              <ul>
+                <li>depth 3</li>
+                <li>depth 3</li>
+                <li>depth 3</li>
+              </ul>
+            </li>
+            <li>
+              티
+            </li>
+            <li>
+              셔츠
+            </li>
+            <li>
+              니트
+            </li>
+          </ul>
+        </li>
+        <li>
+          아우터
+          <ul>
+            <li>자켓</li>
+            <li>코트</li>
+            <li>
+              가디건
+              <ul>
+                <li>depth3</li>
+                <li>depth3</li>
+                <li>depth3</li>
+              </ul>
+            </li>
+            <li>머플러</li>
+          </ul>
+        </li>
+        <li>
+          팬츠
+          <ul>
+            <li>청바지</li>
+            <li>짧은바지</li>
+            <li>긴바지</li>
+            <li>레깅스</li>
+          </ul>
+        </li>
+        <li>
+          악세서리
+          <ul>
+            <li>귀고리</li>
+            <li>목걸이</li>
+            <li>반지</li>
+            <li>팔찌</li>
+          </ul>
+        </li>
+      </ul>
+
+      <ul>
+        <li>
+          <a href="#">depth1</a>
+          <ul>
+            <li>
+              <a href="#">depth2</a>
+              <ul>
+                <li>
+                  <a href="#">depth3</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">depth2</a>
+              <ul>
+                <li>
+                  <a href="#">depth3</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">depth1</a>
+          <ul>
+            <li>
+              <a href="#">depth2</a>
+              <ul>
+                <li>
+                  <a href="#">depth3</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">depth2</a>
+              <ul>
+                <li>
+                  <a href="#">depth3</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">depth1</a>
+          <ul>
+            <li>
+              <a href="#">depth2</a>
+              <ul>
+                <li>
+                  <a href="#">depth3</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">depth2</a>
+              <ul>
+                <li>
+                  <a href="#">depth3</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">depth1</a>
+          <ul>
+            <li>
+              <a href="#">depth2</a>
+              <ul>
+                <li>
+                  <a href="#">depth3</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">depth2</a>
+              <ul>
+                <li>
+                  <a href="#">depth3</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
     </section>
 
     <header>
