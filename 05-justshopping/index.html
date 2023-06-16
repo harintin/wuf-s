@@ -1,115 +1,160 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Just쇼핑몰</title>
-</head>
-<body>
-  <!-- 클래스 잡을 때 첫글자가 숫자면 안됨 -->
-  <!-- 의미있는 마크업, 클래스 이름 다 잡아주기 -->
-  <div class="wrap">
-    <header class="header">
-      <!-- 로고 타이틀 -->
-      <h1 class="logo">
-        <a href="#">Just쇼핑몰</a>
-      </h1>
-      <!-- h2는 굳이 쓸 필요 없지만 시각장애인들을 위해 넣어주는 것이 좋음 -->
-      <h2>메인 메뉴</h2>
-      <!-- nav 태그는 네비게이션 넣을 때 사용 -->
-      <nav class="gnb">
-        <ul class="depth1">
-          <li>
-            <a href="#">탑</a>
-            <ul class="depth2">
-              <li><a href="#">블라우스</a></li>
-              <li><a href="#">티</a></li>
-              <li><a href="#">셔츠</a></li>
-              <li><a href="#">니트</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="#">아우터</a>
-            <ul class="depth2">
-              <li><a href="#">자켓</a></li>
-              <li><a href="#">코트</a></li>
-              <li><a href="#">가디건</a></li>
-              <li><a href="#">머플러</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="#">팬츠</a>
-            <ul class="depth2">
-              <li><a href="#">청바지</a></li>
-              <li><a href="#">짧은바지</a></li>
-              <li><a href="#">긴바지</a></li>
-              <li><a href="#">레깅스</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="#">악세서리</a>
-            <ul class="depth2">
-              <li><a href="#">귀고리</a></li>
-              <li><a href="#">목걸이</a></li>
-              <li><a href="#">반지</a></li>
-              <li><a href="#">팔찌</a></li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main class="main">
-      <div class="slide">
-        <div class="slide1">slide1</div>
-        <div class="slide2">slide2</div>
-        <div class="slide3">slide3</div>
-      </div>
-      <div class="contents">
-        <!-- 공지사항 & 갤러리 -->
-        <div class="tabs">
-          <section class="bbs">
-            <h3>공지사항</h3>
-            <div class="cont">공지사항 내용</div>
-          </section>
-          <section class="gallery">
-            <h3>갤러리</h3>
-            <div class="cont">갤러리 내용</div>
-          </section>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Just쇼핑몰</title>
+  </head>
+  <body>
+    <!-- 클래스 잡을 때 첫글자가 숫자면 안됨 -->
+    <!-- 의미있는 마크업, 클래스 이름 다 잡아주기 -->
+    <div class="wrap">
+      <header class="header">
+        <!-- 로고 타이틀 -->
+        <h1 class="logo">
+          <a href="#">Just쇼핑몰</a>
+        </h1>
+        <!-- h2는 굳이 쓸 필요 없지만 시각장애인들을 위해 넣어주는 것이 좋음 -->
+        <h2>메인 메뉴</h2>
+        <!-- nav 태그는 네비게이션 넣을 때 사용 -->
+        <nav class="gnb">
+          <ul class="depth1">
+            <li>
+              <a href="#">탑</a>
+              <ul class="depth2">
+                <li><a href="#">블라우스</a></li>
+                <li><a href="#">티</a></li>
+                <li><a href="#">셔츠</a></li>
+                <li><a href="#">니트</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">아우터</a>
+              <ul class="depth2">
+                <li><a href="#">자켓</a></li>
+                <li><a href="#">코트</a></li>
+                <li><a href="#">가디건</a></li>
+                <li><a href="#">머플러</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">팬츠</a>
+              <ul class="depth2">
+                <li><a href="#">청바지</a></li>
+                <li><a href="#">짧은바지</a></li>
+                <li><a href="#">긴바지</a></li>
+                <li><a href="#">레깅스</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">악세서리</a>
+              <ul class="depth2">
+                <li><a href="#">귀고리</a></li>
+                <li><a href="#">목걸이</a></li>
+                <li><a href="#">반지</a></li>
+                <li><a href="#">팔찌</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main class="main">
+        <div class="slide">
+          <div class="slide1">slide1</div>
+          <div class="slide2">slide2</div>
+          <div class="slide3">slide3</div>
         </div>
-        <!-- 배너 -->
-        <div class="bnr">
-          <a href="#">
-            <img src="#" alt="배너1">
-          </a>
+        <div class="contents">
+          <!-- 공지사항 & 갤러리 -->
+          <div class="tabs">
+            <section class="bbs">
+              <h3>공지사항</h3>
+              <div class="cont">
+                <ul>
+                  <li>
+                    <a href="#">모바일 APP 설치하고 10% 할인쿠폰 받자!</a>
+                  </li>
+                  <li>
+                    <a href="#">자동로그인이 자꾸 풀려요</a>
+                  </li>
+                  <li>
+                    <a href="#">품절, 배송지연 보상제도 </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      >앱 설치 자동로그인 설정 & 푸시 알림 설정 안내</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      >개인정보 처리방침 변경안내 (2021년 12월 02일 시행)</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </section>
+            <section class="gallery">
+              <h3>갤러리</h3>
+              <div class="cont">
+                <ul>
+                  <li>
+                    <img src="이미지경로" alt="" />
+                    <a href="#">반값팬츠</a>
+                  </li>
+                  <li>
+                    <img src="이미지경로" alt="" />
+                    <a href="#">반값팬츠</a>
+                  </li>
+                  <li>
+                    <img src="이미지경로" alt="" />
+                    <a href="#">반값팬츠</a>
+                  </li>
+                </ul>
+              </div>
+            </section>
+          </div>
+          <!-- 배너 -->
+          <div class="bnr">
+            <a href="#">
+              <img src="#" alt="배너1" />
+            </a>
+          </div>
+          <!-- 바로가기 -->
+          <div class="goto">
+            <ul>
+              <li><a href="#">Q&A</a></li>
+              <li><a href="#">REVIEW</a></li>
+              <li><a href="#">EVENT</a></li>
+              <li><a href="#">배송조회</a></li>
+            </ul>
+          </div>
         </div>
-        <!-- 바로가기 -->
-        <div class="goto">
+      </main>
+      <footer class="footer">
+        <!-- 로고 풋터용 -->
+        <div class="logo-foot">
+          <a href="#">로고 풋터용</a>
+        </div>
+        <!-- 카피라이트 -->
+        <div class="copyright">&copy;카피라이트</div>
+        <!-- sns 바로가기 -->
+        <div class="sns">
           <ul>
-            <li><a href="#">바로가기1</a></li>
-            <li><a href="#">바로가기2</a></li>
-            <li><a href="#">바로가기3</a></li>
-            <li><a href="#">바로가기4</a></li>
+            <li><a href="#">facebook</a></li>
+            <li><a href="#">instagram</a></li>
+            <li><a href="#">youtube</a></li>
+            <li><a href="#">blog</a></li>
           </ul>
         </div>
+      </footer>
+    </div>
+    <!-- modal -->
+    <div id="modal" class="dimmed">
+      <div class="madal-box">
+        <h3>모달창 제목</h3>
+        <p>모달창 내용</p>
+        <button>닫기</button>
       </div>
-    </main>
-    <footer class="footer">
-      <!-- 로고 풋터용 -->
-      <div class="logo-foot">
-        <a href="#">로고 풋터용</a>
-      </div>
-      <!-- 카피라이트 -->
-      <div class="copyright">카피라이트</div>
-      <!-- sns 바로가기 -->
-      <div class="sns">
-        <ul>
-          <li><a href="#">facebook</a></li>
-          <li><a href="#">instagram</a></li>
-          <li><a href="#">youtube</a></li>
-          <li><a href="#">blog</a></li>
-        </ul>
-      </div>
-    </footer>
-  </div>
-</body>
+    </div>
+  </body>
 </html>

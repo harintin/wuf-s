@@ -1,445 +1,526 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Naver</title>
-  <meta property="og:title" content="Naver">
-  <meta property="og:description" content="네이버 메인에서 다양한 정보와 유용한 컨텐츠를 만나 보세요">
-  <meta property="og:image" content="https://s.pstatic.net/static/www/mobile/edit/2016/0705/mobile_212852414260.png">
-  <meta property="og:url" content="https://www.naver.com/">
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Naver">
-  <meta name="twitter:description" content="네이버 메인에서 다양한 정보와 유용한 컨텐츠를 만나 보세요">
-  <meta name="twitter:image" content="https://s.pstatic.net/static/www/mobile/edit/2016/0705/mobile_212852414260.png">
-  <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Naver</title>
+    <meta property="og:title" content="Naver" />
+    <meta
+      property="og:description"
+      content="네이버 메인에서 다양한 정보와 유용한 컨텐츠를 만나 보세요"
+    />
+    <meta
+      property="og:image"
+      content="https://s.pstatic.net/static/www/mobile/edit/2016/0705/mobile_212852414260.png"
+    />
+    <meta property="og:url" content="https://www.naver.com/" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Naver" />
+    <meta
+      name="twitter:description"
+      content="네이버 메인에서 다양한 정보와 유용한 컨텐츠를 만나 보세요"
+    />
+    <meta
+      name="twitter:image"
+      content="https://s.pstatic.net/static/www/mobile/edit/2016/0705/mobile_212852414260.png"
+    />
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
 
-  <!-- Internal CSS -->
-  <style>
-    header {
-      border-bottom: 3px solid rgb(255, 190, 214);
-    }
-  </style>
-  <!-- External CSS : 이거 사용 -->
-  <link rel="stylesheet" href="./css/comm.css">
-</head>
-<body>
-  <div>
-    <h1>글씨 태그</h1>
-    <!-- 230612 header 수정 -->
-    <header>
-      <h2>header 태그</h2>      
-    </header>
-    <section>
-      <h1>h1 태그 : 가장 중요한 타이틀</h1>
-      <h2>h2 태그 : 두번째로 중요한 타이틀</h2>
-      <h3>h3 태그 : 세번째로 중요한 타이틀</h3>
-    </section>
-    <hr>
-    <header>
-      <h2>p 태그</h2>
-    </header>
-    <section>
-      <p>2017년에는 ‘암벽 여제’로 불리던 클라이밍 선수 김자인이 당국의 허가를 얻어 롯데월드타워를 등정했다. 그는 롯데월드타워 외벽에 인공 손잡이를 설치하지 않고 건물의 자체 구조물과 안전 장비만을 사용해 1층부터 123층 꼭대기까지 오르는 데 성공했다.</p>
-    </section>
-
-    <hr>
-    <header>
-      <h2>텍스트 서식</h2>
-    </header>
-    <section>
-      - b 태그 : 일반 <b>볼드체</b> <br>
-      - strong 태그 : <strong>중요한</strong> 텍스트 <br>
-      - i 태그 : <i>기술 용어, 구문</i> <br>
-      - em 태그 : <em>강조 텍스트</em> <br>
-      - mark 태그 : <mark>디자인적으로 강조 텍스트</mark> <br>
-      - address 태그 : <address>연락처 정보를 위한 텍스트</address> <br>
-    </section>
-
-    <header>
-      <h2>link 태그</h2>
-    </header>
-    <section>
-      <!-- 절대경로 -->
-      <a href="https://www.naver.com/" target="_blank">네이버 링크</a>
-      <!-- 상대경로 -->
-      <a href="./01-layout.html">layout.html</a>
-      <a href="./images/01-01-daisy-w.jpeg"target="_blank">daisy image</a>
-      <a href="images/01-01-daisy-w.jpeg">daisy image2</a>
-      <a href="mailto:semioi@naver.com">semioi@naver.com</a>
-      <!-- 웹접근성 -->
-      <a href="https://www.naver.com" target="_blank"  title="새창열림">네이버</a>
-      <a href="#main">main 바로가기</a>
-      <a href="sub/sub.html#sec3"target="_blank">sub.html 내에 있는 sec3 바로가기</a>
-      <a href="sub/sub.html#sec2" target="_blank">sub.html 내에 있는 sec2 바로가기</a>
-    </section>
-    <!-- 이미지 태그 -->
-    <header>
-      <h2>images 태그</h2>
-    </header>
-    <section>
-      <!-- 상대경로 -->
-      <!-- width, height 속성엔 단위 생략 -->
-      <img src="./images/01-01-daisy-w.jpeg" alt="daisy" width="200" height="200">
-      <!-- style 속성에는 단위 적용 -->
-      <img src="./images/01-01-daisy-w.jpeg" alt="daisy" style="width: 300px;height: 300px;">
-      <!-- 절대경로 -->
-      <a href="https://www.rankingdak.com/promotion/exhibit/list?utm_source=timeboard&utm_medium=DA&utm_campaign=mainbranding&utm_content=&utm_term=6_3_B" target="_blank" title="새창열림">
-        <img src="https://ssl.pstatic.net/melona/libs/1448/1448051/51cbabe0210df9587ff4_20230609164731331.jpg" alt="랭킹닭컴 근육절 디데이 하루 놓치지마세요 닭가슴살 소시지 팩당 990원부터!" width="100%">
-      </a>
-      <!-- 픽쳐 태그 - 반응형 크기에 따라 그림 달라지게 하는 방법 -->
-      <picture>
-        <!-- width 650px 이상일 경우 srcset 이미지가 보인다 -->
-        <source media="(min-width: 650px)" srcset="images/img_food.jpg" width="100%">
-        <!-- width 465px 이상일 경우 srcset 이미지가 보인다 -->
-        <source media="(min-width: 465px)" srcset="images/img_car.jpg" width="100%">
-        <img src="images/img_girl.jpg" alt="img_girl" width="100%">
-      </picture>
-    </section>
-
-    <header>
-      <h2>table 태그</h2>
-    </header>
-    <section>
-      <table>
-        <!-- 웹접근성 요건 추가 테이블 설명 : 자세한 설명 -->
-        <caption>뉴진스 성적표</caption>
-        <!-- 열의 가로 사이즈 -->
-        <colgroup>
-          <!-- span 열의 개수 -->
-          <col>
-          <col width="25%">
-          <col span="4" width="10%"> 
-        </colgroup>
-        <!-- 테이블의 구분 -->
-        <thead>
-          <tr>
-            <th scope="col" rowspan="2" colspan="2">과목</th>
-            <th scope="col" colspan="5">1학년 11반</th>
-          </tr>
-          <tr>
-            <th scope="col">다니엘</th>
-            <th scope="col">민지</th>
-            <th scope="col">하니</th>
-            <th scope="col">해린</th>
-          </tr>
-        </thead>
-        <!-- 테이블의 요약 -->
-        <tbody>
-          <tr>
-            <th scope="row" rowspan="5">공통</th>
-            <th scope="row">국어</th>
-            <td>100</td>
-            <td>100</td>
-            <td>90</td>
-            <td>90</td>
-          </tr>
-          <tr>
-            <th scope="row">수학</th>
-            <td>100</td>
-            <td>100</td>
-            <td>90</td>
-            <td>90</td>
-          </tr>
-          <tr>
-            <th scope="row">영어</th>
-            <td>100</td>
-            <td>100</td>
-            <td>90</td>
-            <td>90</td>
-          </tr>
-        </tbody>
-        <tfoot>
-          <tr>
-            <th scope="row" colspan="2">평균</th>
-            <td>100</td>
-            <td>100</td>
-            <td>90</td>
-            <td>90</td>
-          </tr>
-        </tfoot>
-      </table>
-    </section>
+    <!-- Internal CSS -->
     <style>
-      table, tr, td, th {
-        border: 1px solid #ff90ba;
-        border-collapse: collapse;
-      }
-      table {
-        width: 100%;
-      }
-      td {
-        height: 70px;
-      }
-      th {
-        background-color: rgb(255, 255, 255);
-        color: rgb(255, 168, 191);
+      header {
+        border-bottom: 3px solid rgb(255, 190, 214);
       }
     </style>
-
-    <header>
-      <h2>목록 태그</h2>
-    </header>
-    <section>
-      <h3>좋아하는 음식</h3>
-      <!-- 순서 없는 목록 -->
-      <ul>
-        <li>떡볶이</li>
-        <li>마라탕</li>
-        <li>피자</li>
-      </ul>
-      <h3>좋아하는 동물</h3>
-      <!-- 순서 있는 목록 -->
-      <ol>
-        <li>고양이</li>
-        <li>강아지</li>
-        <li>토끼</li>
-      </ol>
-
-      <!-- nav -->
-      <h3>메인 메뉴</h3>
-      <!-- depth 1 -->
-      <ul>
-        <li>
-          탑
-          <!-- depth 2 -->
-          <ul>
-            <li>
-              블라우스
-              <ul>
-                <li>depth 3</li>
-                <li>depth 3</li>
-                <li>depth 3</li>
-              </ul>
-            </li>
-            <li>
-              티
-            </li>
-            <li>
-              셔츠
-            </li>
-            <li>
-              니트
-            </li>
-          </ul>
-        </li>
-        <li>
-          아우터
-          <ul>
-            <li>자켓</li>
-            <li>코트</li>
-            <li>
-              가디건
-              <ul>
-                <li>depth3</li>
-                <li>depth3</li>
-                <li>depth3</li>
-              </ul>
-            </li>
-            <li>머플러</li>
-          </ul>
-        </li>
-        <li>
-          팬츠
-          <ul>
-            <li>청바지</li>
-            <li>짧은바지</li>
-            <li>긴바지</li>
-            <li>레깅스</li>
-          </ul>
-        </li>
-        <li>
-          악세서리
-          <ul>
-            <li>귀고리</li>
-            <li>목걸이</li>
-            <li>반지</li>
-            <li>팔찌</li>
-          </ul>
-        </li>
-      </ul>
-
-      <ul>
-        <li>
-          <a href="#">depth1</a>
-          <ul>
-            <li>
-              <a href="#">depth2</a>
-              <ul>
-                <li>
-                  <a href="#">depth3</a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a href="#">depth2</a>
-              <ul>
-                <li>
-                  <a href="#">depth3</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <a href="#">depth1</a>
-          <ul>
-            <li>
-              <a href="#">depth2</a>
-              <ul>
-                <li>
-                  <a href="#">depth3</a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a href="#">depth2</a>
-              <ul>
-                <li>
-                  <a href="#">depth3</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <a href="#">depth1</a>
-          <ul>
-            <li>
-              <a href="#">depth2</a>
-              <ul>
-                <li>
-                  <a href="#">depth3</a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a href="#">depth2</a>
-              <ul>
-                <li>
-                  <a href="#">depth3</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <a href="#">depth1</a>
-          <ul>
-            <li>
-              <a href="#">depth2</a>
-              <ul>
-                <li>
-                  <a href="#">depth3</a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a href="#">depth2</a>
-              <ul>
-                <li>
-                  <a href="#">depth3</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-      </ul>
-    </section>
-
-    <header>
-      <h2>dl, dt, dd 태그</h2>
-      <!-- dl : 설명 목록 정의 , dt : 용어(이름)을 정의 , dd : 각 용어를 설명 -->
+    <!-- External CSS : 이거 사용 -->
+    <link rel="stylesheet" href="./css/comm.css" />
+    <!-- External JS -->
+    <!-- JQuery 라이브러리 : 건들지마 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!-- 내 제이쿼리 스크립트 -->
+    <script src="./js/comm.js"></script>
+  </head>
+  <body>
+    <div>
+      <h1>글씨 태그</h1>
+      <!-- 230612 header 수정 -->
+      <header>
+        <h2>header 태그</h2>
+      </header>
       <section>
-        <dl>
-          <dt>이름</dt>
-          <dd>설명</dd>
-          <dt>이름</dt>
-          <dd>설명</dd>
-        </dl>
-        <dl>
-          <dt>이름</dt>
-          <dd>설명</dd>
-        </dl>
-        <dl>
-          <dt>이름</dt>
-          <dd>설명</dd>
-        </dl>
+        <h1>h1 태그 : 가장 중요한 타이틀</h1>
+        <h2>h2 태그 : 두번째로 중요한 타이틀</h2>
+        <h3>h3 태그 : 세번째로 중요한 타이틀</h3>
       </section>
-    </header>
+      <hr />
+      <header>
+        <h2>p 태그</h2>
+      </header>
+      <section>
+        <p>
+          2017년에는 ‘암벽 여제’로 불리던 클라이밍 선수 김자인이 당국의 허가를
+          얻어 롯데월드타워를 등정했다. 그는 롯데월드타워 외벽에 인공 손잡이를
+          설치하지 않고 건물의 자체 구조물과 안전 장비만을 사용해 1층부터 123층
+          꼭대기까지 오르는 데 성공했다.
+        </p>
+      </section>
 
-    <header>
-      <h2>블록, 인라인 태그</h2>
-    </header>
-    <!-- 블록은 세로로 정렬, 인라인은 가로로 정렬 -->
-    <section>
-      <ul>
-        <li>
-          block
-          <div style="border: 1px solid rgb(255, 168, 191);">div</div>
-          <div style="border: 1px solid rgb(255, 168, 191);">div-2</div>
-          <section style="border: 1px solid rgb(255, 168, 191);">section</section>
-          <header style="border: 1px solid rgb(255, 168, 191);">header</header>
-        </li>
-      </ul>
-    </section>
+      <hr />
+      <header>
+        <h2>텍스트 서식</h2>
+      </header>
+      <section>
+        - b 태그 : 일반 <b>볼드체</b> <br />
+        - strong 태그 : <strong>중요한</strong> 텍스트 <br />
+        - i 태그 : <i>기술 용어, 구문</i> <br />
+        - em 태그 : <em>강조 텍스트</em> <br />
+        - mark 태그 : <mark>디자인적으로 강조 텍스트</mark> <br />
+        - address 태그 :
+        <address>연락처 정보를 위한 텍스트</address>
+        <br />
+      </section>
 
-    <header>
-      <h2>class 태그</h2>
-    </header>
-    <section>
-      <div class="wrap">
-        <div class="sec sec1">1</div>
-        <div class="sec sec2">2</div>
-        <div class="sec sec3">3</div>
-      </div>
+      <header>
+        <h2>link 태그</h2>
+      </header>
+      <section>
+        <!-- 절대경로 -->
+        <a href="https://www.naver.com/" target="_blank">네이버 링크</a>
+        <!-- 상대경로 -->
+        <a href="./01-layout.html">layout.html</a>
+        <a href="./images/01-01-daisy-w.jpeg" target="_blank">daisy image</a>
+        <a href="images/01-01-daisy-w.jpeg">daisy image2</a>
+        <a href="mailto:semioi@naver.com">semioi@naver.com</a>
+        <!-- 웹접근성 -->
+        <a href="https://www.naver.com" target="_blank" title="새창열림"
+          >네이버</a
+        >
+        <a href="#main">main 바로가기</a>
+        <a href="sub/sub.html#sec3" target="_blank"
+          >sub.html 내에 있는 sec3 바로가기</a
+        >
+        <a href="sub/sub.html#sec2" target="_blank"
+          >sub.html 내에 있는 sec2 바로가기</a
+        >
+      </section>
+      <!-- 이미지 태그 -->
+      <header>
+        <h2>images 태그</h2>
+      </header>
+      <section>
+        <!-- 상대경로 -->
+        <!-- width, height 속성엔 단위 생략 -->
+        <img
+          src="./images/01-01-daisy-w.jpeg"
+          alt="daisy"
+          width="200"
+          height="200"
+        />
+        <!-- style 속성에는 단위 적용 -->
+        <img
+          src="./images/01-01-daisy-w.jpeg"
+          alt="daisy"
+          style="width: 300px; height: 300px"
+        />
+        <!-- 절대경로 -->
+        <a
+          href="https://www.rankingdak.com/promotion/exhibit/list?utm_source=timeboard&utm_medium=DA&utm_campaign=mainbranding&utm_content=&utm_term=6_3_B"
+          target="_blank"
+          title="새창열림"
+        >
+          <img
+            src="https://ssl.pstatic.net/melona/libs/1448/1448051/51cbabe0210df9587ff4_20230609164731331.jpg"
+            alt="랭킹닭컴 근육절 디데이 하루 놓치지마세요 닭가슴살 소시지 팩당 990원부터!"
+            width="100%"
+          />
+        </a>
+        <!-- 픽쳐 태그 - 반응형 크기에 따라 그림 달라지게 하는 방법 -->
+        <picture>
+          <!-- width 650px 이상일 경우 srcset 이미지가 보인다 -->
+          <source
+            media="(min-width: 650px)"
+            srcset="images/img_food.jpg"
+            width="100%"
+          />
+          <!-- width 465px 이상일 경우 srcset 이미지가 보인다 -->
+          <source
+            media="(min-width: 465px)"
+            srcset="images/img_car.jpg"
+            width="100%"
+          />
+          <img src="images/img_girl.jpg" alt="img_girl" width="100%" />
+        </picture>
+      </section>
+
+      <header>
+        <h2>table 태그</h2>
+      </header>
+      <section>
+        <table>
+          <!-- 웹접근성 요건 추가 테이블 설명 : 자세한 설명 -->
+          <caption>
+            뉴진스 성적표
+          </caption>
+          <!-- 열의 가로 사이즈 -->
+          <colgroup>
+            <!-- span 열의 개수 -->
+            <col />
+            <col width="25%" />
+            <col span="4" width="10%" />
+          </colgroup>
+          <!-- 테이블의 구분 -->
+          <thead>
+            <tr>
+              <th scope="col" rowspan="2" colspan="2">과목</th>
+              <th scope="col" colspan="5">1학년 11반</th>
+            </tr>
+            <tr>
+              <th scope="col">다니엘</th>
+              <th scope="col">민지</th>
+              <th scope="col">하니</th>
+              <th scope="col">해린</th>
+            </tr>
+          </thead>
+          <!-- 테이블의 요약 -->
+          <tbody>
+            <tr>
+              <th scope="row" rowspan="5">공통</th>
+              <th scope="row">국어</th>
+              <td>100</td>
+              <td>100</td>
+              <td>90</td>
+              <td>90</td>
+            </tr>
+            <tr>
+              <th scope="row">수학</th>
+              <td>100</td>
+              <td>100</td>
+              <td>90</td>
+              <td>90</td>
+            </tr>
+            <tr>
+              <th scope="row">영어</th>
+              <td>100</td>
+              <td>100</td>
+              <td>90</td>
+              <td>90</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <th scope="row" colspan="2">평균</th>
+              <td>100</td>
+              <td>100</td>
+              <td>90</td>
+              <td>90</td>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
       <style>
-        .wrap {
-          border: 5px solid rgb(89, 158, 255);
-          background: #c4d3ff;
-        }
-        .sec {
+        table,
+        tr,
+        td,
+        th {
           border: 1px solid #ff90ba;
-          background: black;
-          color: white;
+          border-collapse: collapse;
         }
-        .sec1 {
-          background: blueviolet
+        table {
+          width: 100%;
         }
-        .sec2 {
-          background: greenyellow;
+        td {
+          height: 70px;
         }
-        .sec3 {
-          background: red;
+        th {
+          background-color: rgb(255, 255, 255);
+          color: rgb(255, 168, 191);
         }
       </style>
 
-    </section>
+      <header>
+        <h2>목록 태그</h2>
+      </header>
+      <section>
+        <h3>좋아하는 음식</h3>
+        <!-- 순서 없는 목록 -->
+        <ul>
+          <li>떡볶이</li>
+          <li>마라탕</li>
+          <li>피자</li>
+        </ul>
+        <h3>좋아하는 동물</h3>
+        <!-- 순서 있는 목록 -->
+        <ol>
+          <li>고양이</li>
+          <li>강아지</li>
+          <li>토끼</li>
+        </ol>
 
-    <header>
-      <h2>북마크 태그</h2>
-    </header>
-    <!-- 북마크 태그 -->
-    <section id="nav">
-      <h2>nav</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut nihil ipsum laborum, libero, doloribus provident iure suscipit sequi nemo fugit odio magnam, quidem eius obcaecati corporis quis! Saepe, modi expedita.</p>
-    </section>
-    <section>
-      <h2>c1</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut nihil ipsum laborum, libero, doloribus provident iure suscipit sequi nemo fugit odio magnam, quidem eius obcaecati corporis quis! Saepe, modi expedita.</p>
-    </section>
-    <section>
-      <h2>c1</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut nihil ipsum laborum, libero, doloribus provident iure suscipit sequi nemo fugit odio magnam, quidem eius obcaecati corporis quis! Saepe, modi expedita.</p>
-    </section>
-    <section id="main">
-      <h2>main</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut nihil ipsum laborum, libero, doloribus provident iure suscipit sequi nemo fugit odio magnam, quidem eius obcaecati corporis quis! Saepe, modi expedita.</p>
-      <a href="#nav">nav 바로가기</a>
-    </section>
-  </div>
-  <!-- 주석 태그 -->
-  <!-- <p>졸리다아아아아아</p> -->
-  <p>졸리다아아<!-- 아아아 --></p>
-</body>
+        <!-- nav -->
+        <h3>메인 메뉴</h3>
+        <!-- depth 1 -->
+        <ul>
+          <li>
+            탑
+            <!-- depth 2 -->
+            <ul>
+              <li>
+                블라우스
+                <ul>
+                  <li>depth 3</li>
+                  <li>depth 3</li>
+                  <li>depth 3</li>
+                </ul>
+              </li>
+              <li>티</li>
+              <li>셔츠</li>
+              <li>니트</li>
+            </ul>
+          </li>
+          <li>
+            아우터
+            <ul>
+              <li>자켓</li>
+              <li>코트</li>
+              <li>
+                가디건
+                <ul>
+                  <li>depth3</li>
+                  <li>depth3</li>
+                  <li>depth3</li>
+                </ul>
+              </li>
+              <li>머플러</li>
+            </ul>
+          </li>
+          <li>
+            팬츠
+            <ul>
+              <li>청바지</li>
+              <li>짧은바지</li>
+              <li>긴바지</li>
+              <li>레깅스</li>
+            </ul>
+          </li>
+          <li>
+            악세서리
+            <ul>
+              <li>귀고리</li>
+              <li>목걸이</li>
+              <li>반지</li>
+              <li>팔찌</li>
+            </ul>
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <a href="#">depth1</a>
+            <ul>
+              <li>
+                <a href="#">depth2</a>
+                <ul>
+                  <li>
+                    <a href="#">depth3</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">depth2</a>
+                <ul>
+                  <li>
+                    <a href="#">depth3</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">depth1</a>
+            <ul>
+              <li>
+                <a href="#">depth2</a>
+                <ul>
+                  <li>
+                    <a href="#">depth3</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">depth2</a>
+                <ul>
+                  <li>
+                    <a href="#">depth3</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">depth1</a>
+            <ul>
+              <li>
+                <a href="#">depth2</a>
+                <ul>
+                  <li>
+                    <a href="#">depth3</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">depth2</a>
+                <ul>
+                  <li>
+                    <a href="#">depth3</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">depth1</a>
+            <ul>
+              <li>
+                <a href="#">depth2</a>
+                <ul>
+                  <li>
+                    <a href="#">depth3</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">depth2</a>
+                <ul>
+                  <li>
+                    <a href="#">depth3</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+
+      <header>
+        <h2>dl, dt, dd 태그</h2>
+        <!-- dl : 설명 목록 정의 , dt : 용어(이름)을 정의 , dd : 각 용어를 설명 -->
+        <section>
+          <dl>
+            <dt>이름</dt>
+            <dd>설명</dd>
+            <dt>이름</dt>
+            <dd>설명</dd>
+          </dl>
+          <dl>
+            <dt>이름</dt>
+            <dd>설명</dd>
+          </dl>
+          <dl>
+            <dt>이름</dt>
+            <dd>설명</dd>
+          </dl>
+        </section>
+      </header>
+
+      <header>
+        <h2>블록, 인라인 태그</h2>
+      </header>
+      <!-- 블록은 세로로 정렬, 인라인은 가로로 정렬 -->
+      <section>
+        <ul>
+          <li>
+            block
+            <div style="border: 1px solid rgb(255, 168, 191)">div</div>
+            <div style="border: 1px solid rgb(255, 168, 191)">div-2</div>
+            <section style="border: 1px solid rgb(255, 168, 191)">
+              section
+            </section>
+            <header style="border: 1px solid rgb(255, 168, 191)">header</header>
+          </li>
+        </ul>
+      </section>
+
+      <header>
+        <h2>class 태그</h2>
+      </header>
+      <section>
+        <div class="wrap">
+          <div class="sec sec1">1</div>
+          <div class="sec sec2">2</div>
+          <div class="sec sec3">3</div>
+        </div>
+        <style>
+          .wrap {
+            border: 5px solid rgb(89, 158, 255);
+            background: #c4d3ff;
+          }
+          .sec {
+            border: 1px solid #ff90ba;
+            background: black;
+            color: white;
+          }
+          .sec1 {
+            background: blueviolet;
+          }
+          .sec2 {
+            background: greenyellow;
+          }
+          .sec3 {
+            background: red;
+          }
+        </style>
+      </section>
+
+      <iframe
+        src="./01-layout.html"
+        frameborder="0"
+        style="width: 100%; height: 300px"
+      ></iframe>
+
+      <header>
+        <h2>북마크 태그</h2>
+      </header>
+      <!-- 북마크 태그 -->
+      <section id="nav">
+        <h2>nav</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut nihil
+          ipsum laborum, libero, doloribus provident iure suscipit sequi nemo
+          fugit odio magnam, quidem eius obcaecati corporis quis! Saepe, modi
+          expedita.
+        </p>
+      </section>
+      <section>
+        <h2>c1</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut nihil
+          ipsum laborum, libero, doloribus provident iure suscipit sequi nemo
+          fugit odio magnam, quidem eius obcaecati corporis quis! Saepe, modi
+          expedita.
+        </p>
+      </section>
+      <section>
+        <h2>c1</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut nihil
+          ipsum laborum, libero, doloribus provident iure suscipit sequi nemo
+          fugit odio magnam, quidem eius obcaecati corporis quis! Saepe, modi
+          expedita.
+        </p>
+      </section>
+      <section id="main">
+        <h2>main</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut nihil
+          ipsum laborum, libero, doloribus provident iure suscipit sequi nemo
+          fugit odio magnam, quidem eius obcaecati corporis quis! Saepe, modi
+          expedita.
+        </p>
+        <a href="#nav">nav 바로가기</a>
+      </section>
+    </div>
+    <!-- 주석 태그 -->
+    <!-- <p>졸리다아아아아아</p> -->
+    <p>졸리다아아<!-- 아아아 --></p>
+  </body>
 </html>
