@@ -21,7 +21,7 @@
     <form action="">
       <div class="terms_item">
         <div class="inp">
-          <input type="checkbox" name="전체 동의하기" id="check1" />
+          <input type="checkbox" name="전체 동의하기" id="check1" required />
           <label for="check1">네이버 이용약관</label>
         </div>
         <div class="box">
@@ -35,7 +35,12 @@
       </div>
       <div class="terms_item">
         <div class="inp">
-          <input type="checkbox" name="개인정보 수집 및 이용" id="check2" />
+          <input
+            type="checkbox"
+            name="개인정보 수집 및 이용"
+            id="check2"
+            required
+          />
           <label for="check2">개인정보 수집 및 이용</label>
         </div>
         <div class="box">
@@ -58,6 +63,8 @@
           id="id1"
           placeholder="10자 이하로 적어주세요."
           maxlength="10"
+          required
+          autofocus
         />
       </div>
       <div>
