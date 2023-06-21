@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>가상선택자 | css</title>
+  </head>
+  <body>
+    <h1>가상선택자</h1>
+    <h2>순서</h2>
+    <br />
+    <ul class="lst-">
+      <li>menu1</li>
+      <li>menu2</li>
+      <li>menu3</li>
+      <li>menu4</li>
+    </ul>
+    <style>
+      .lst- {
+        border: 5px solid #d1d1d1;
+        text-align: center;
+      }
+      .lst- > li {
+        /* margin 넣을 때 m 뒤에 숫자 넣고 탭 */
+        margin: 5px;
+        border: 5px solid rgb(255, 198, 214);
+      }
+      .lst- li::marker {
+        color: #d1d1d1;
+      }
+      .lst- li:first-child {
+        background: #d3d2fc;
+      }
+      .lst- li:nth-child(2) {
+        background: #ffe4cc;
+      }
+      .lst- li:nth-child(3) {
+        background: #fbffcc;
+      }
+      .lst- li:last-child {
+        background: #d6eefa;
+      }
+      .lst- li:hover {
+        background: #191919;
+        color: rgb(255, 198, 214);
+      }
+    </style>
+
+    <br /><br /><br />
+    <hr />
+    <br /><br /><br />
+
+    <h2>링크 가상선택자</h2>
+    <br />
+    <a href="#">링크 가상선택자</a>
+    <style>
+      a {
+        font-size: 20px;
+        color: #a7cddb;
+      }
+      /* 거의 안 씀 */
+      /* a:liik */
+      a:hover {
+        color: #fcd2e1;
+      }
+      a:active {
+        color: rgb(199, 230, 199);
+      }
+    </style>
+
+    <br /><br /><br />
+    <hr />
+    <br /><br /><br />
+
+    <h2>가상 엘리먼트 선택자</h2>
+    <br />
+    <ul class="lst2">
+      <li><a href="#">공지사항1</a></li>
+      <li><a href="#">공지사항2</a></li>
+      <li><a href="#">공지사항3</a></li>
+      <li><a href="#">공지사항4</a></li>
+    </ul>
+    <style>
+      /* 바로가기 아이콘 넣을 때 주로 사용 */
+      .lst2 li a::before {
+        content: "";
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        background: #d2e3fc;
+      }
+      .lst2 li a::after {
+        content: "";
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        background: #d2e3fc;
+      }
+      .lst2 li::marker {
+        color: rgb(132, 132, 132);
+      }
+    </style>
+    <br /><br /><br />
+    <ul class="lst3">
+      <li>menu1</li>
+      <li>menu2</li>
+      <li>menu3</li>
+      <li>menu4</li>
+    </ul>
+    <style>
+      li {
+        list-style: none;
+      }
+      .lst3 {
+        display: flex;
+        text-align: center;
+      }
+      .lst3 li::after {
+        content: "";
+        display: inline-block;
+        width: 4px;
+        height: 4px;
+        background-color: #d1d1d1;
+        border-radius: 50%;
+        margin-right: 30px;
+        margin-left: 30px;
+      }
+      .lst3 li:last-child::after {
+        display: none;
+      }
+      .lst3 li:first-child::before {
+        content: "";
+        display: inline-block;
+        width: 2px;
+        height: 15px;
+        background-color: #5e5e5e;
+        margin-right: 20px;
+      }
+      .lst3 li:last-child::after {
+        content: "";
+        display: inline-block;
+        width: 2px;
+        height: 15px;
+        background-color: #5e5e5e;
+        margin-left: 20px;
+      }
+      .lst3 li:hover {
+        color: rgb(255, 156, 181);
+      }
+    </style>
+
+    <br /><br /><br />
+    <hr />
+    <br /><br /><br />
+  </body>
+</html>
