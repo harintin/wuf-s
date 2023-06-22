@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>font | css</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kablammo&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <!-- 웹디자인기능사용 reset -->
+    <style>
+      body {
+        margin: 0px;
+        padding: 0px;
+        line-height: 1.5;
+        color: #222328;
+        text-decoration: none;
+        list-style: none;
+        box-sizing: border-box;
+        /* 안전 글꼴 */
+        font-family: "Noto Sans KR", sans-serif;
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>font</h1>
+
+    <h2>일반</h2>
+    <div class="font1">
+      <strong>타이틀</strong>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus
+        dolorum quod assumenda eius iure inventore nam architecto quae,
+        recusandae nihil ducimus repellendus nesciunt molestias cupiditate
+        cumque eos eum dolorem quam.
+      </p>
+      <em>
+        기울어짐
+        <span>기울어짐</span>
+      </em>
+      <b>
+        기울어짐
+        <span>기울어짐</span>
+      </b>
+    </div>
+    <style>
+      .font1 {
+        font-family: "Orbit", sans-serif;
+        font-size: 20px;
+      }
+      .font1 em {
+        font-style: normal;
+        font-size: 60px;
+      }
+      .font1 strong {
+        font-weight: normal;
+      }
+      .font1 b {
+        /* font size : 60px; */
+        font-size: 3.75em;
+      }
+      .font1 em span {
+        /* font-size : 60px */
+        /* em : 엄마 태그를 기준으로 */
+        font-size: 3.75px;
+      }
+      .font1 b span {
+        /* font-size: 16px; */
+        /* rem html,body 태그 기준 */
+        font-size: 1rem;
+      }
+    </style>
+
+    <br /><br /><br />
+    <hr />
+    <br /><br /><br />
+
+    <h2>font size</h2>
+
+    <strong>vw</strong>
+    <div class="vw">Responsive Text</div>
+    <div class="vh">Responsive Text</div>
+    <style>
+      .vw {
+        font-family: "Kablammo", cursive;
+        font-size: 8vw;
+      }
+      .vh {
+        font-family: "Kablammo", cursive;
+        font-size: 8vh;
+      }
+    </style>
+
+    <br /><br /><br />
+    <hr />
+    <br /><br /><br />
+
+    <h2>Text</h2>
+
+    <strong>vertical align</strong>
+    <div class="bf">
+      <img src="./images/butterfly.PNG" alt="butterfly" />나비
+    </div>
+
+    <style>
+      .bf {
+        font-size: 30px;
+      }
+      /* vertical align middle : v+a+m */
+      .bf img {
+        vertical-align: middle;
+        /* 마진을 위로 끌어올리는 방법: margin-top */
+        margin-top: -10px;
+      }
+    </style>
+
+    <br /><br /><br />
+    <hr />
+    <br /><br /><br />
+
+    <strong>decoration</strong>
+    <a href="#">데코레이션</a>
+
+    <style>
+      a {
+        text-decoration: none;
+        color: #c3e1af;
+      }
+    </style>
+
+    <br /><br /><br />
+    <hr />
+    <br /><br /><br />
+
+    <h2>텍스트 변형</h2>
+    <p class="text1">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi officiis
+      nesciunt doloremque et reprehenderit a amet ab quos eligendi itaque
+      maiores nisi rem magni vitae, facilis animi placeat praesentium!
+      Dignissimos?
+    </p>
+    <p class="text2">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni veritatis
+      dicta optio consequatur, ea sunt. Consectetur laboriosam facere reiciendis
+      ipsum modi officia provident doloremque voluptatem nam incidunt. Quam,
+      quia officia!
+    </p>
+    <p class="text3">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro,
+      aspernatur! Maxime, velit sunt alias excepturi nihil necessitatibus iure
+      ullam, aliquid similique non delectus placeat ab fuga vel soluta numquam
+      illo!
+    </p>
+
+    <style>
+      /* 대문자로 바꿔주는 태그: uppercase; | 소문자로 바꿔주는 태그: lowercase; */
+      .text1 {
+        text-transform: uppercase;
+      }
+      /* 자간 조절 태그: letter-spacing */
+      .text2 {
+        letter-spacing: 3px;
+      }
+      /* 행간 조절 태그: line-height */
+      .text3 {
+        line-height: 2.5;
+      }
+    </style>
+
+    <br /><br /><br />
+    <hr />
+    <br /><br /><br />
+
+    <h2 class="textshadow">텍스트 그림자</h2>
+
+    <style>
+      .textshadow {
+        text-shadow: 3px 3px rgb(252, 188, 255);
+      }
+    </style>
+
+    <br /><br /><br />
+    <hr />
+    <br /><br /><br />
+  </body>
+</html>
