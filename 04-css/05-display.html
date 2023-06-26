@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display | css</title>
+    <!-- Reset 태그 -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-decoration: none;
+        box-sizing: border-box;
+        line-height: 1.5;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>display</h1>
+
+    <br /><br />
+    <hr />
+    <br /><br />
+
+    <h2>block(기본값)</h2>
+    <br />
+    <div class="box1">박스박스박스</div>
+    <div class="box1">박스박스박스</div>
+    <style>
+      .box1 {
+        width: 200px;
+        height: 100px;
+        background: #ffe0e9;
+      }
+    </style>
+
+    <br /><br /><br />
+    <hr />
+    <br /><br /><br />
+
+    <h2>inline(글자 한개) / inline-block</h2>
+    <br />
+    <!-- 가로,세로 값 가능 | 글자처럼 옆으로 배치 가능 | 글자처럼 스페이스 값 들어감 -->
+    <a href="#" class="box2">링크1</a>
+    <a href="#" class="box2">링크2</a>
+    <a href="#" class="box2">링크3</a>
+    <style>
+      .box2 {
+        display: inline-block;
+        width: 100px;
+        height: 50px;
+        background: #d8e9f9;
+        border: 1px solid #000;
+        text-align: center;
+        line-height: 50px;
+        border-radius: 5px;
+      }
+    </style>
+
+    <br /><br /><br />
+    <hr />
+    <br /><br /><br />
+
+    <h2>none(컨텐츠 없앰)</h2>
+    <br />
+    <!-- display: none; 으로 설정하면 컨텐츠 없어짐 -->
+    <div class="box3">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+    <style>
+      .box3 {
+        display: flex;
+      }
+      .box3 div {
+        width: 100px;
+        height: 100px;
+        background: #d6f0de;
+        border: 1px solid #000;
+        text-align: center;
+        padding: 30px;
+      }
+      /* display: none; = 공간까지 없애는 태그 */
+      .box3 div:first-child {
+        display: none;
+      }
+      /* visibility: hidden; = 공간은 남겨두고 보이지 않게 하는 태그 */
+      .box3 div:nth-child(2) {
+        visibility: hidden;
+      }
+    </style>
+
+    <br /><br /><br />
+    <hr />
+    <br /><br /><br />
+
+    <h2>flex</h2>
+    <br />
+    <!-- box-g = 공통 클래스 -->
+    <div class="box-g box4">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+    </div>
+    <style>
+      /* 엄마 태그에 display: flex; */
+      /* box-g = 공통 클래스  */
+      .box-g {
+        margin-bottom: 30px;
+        background: #202020;
+        padding: 25px;
+      }
+      .box-g div {
+        width: 100px;
+        height: 100px;
+        border: 1px solid #000;
+        background: #e5d4f1;
+        text-align: center;
+        padding: 30px;
+      }
+      .box4 {
+        display: flex;
+      }
+      .box4 div {
+        margin-right: 10px;
+      }
+      .box4 div:last-child {
+        margin-right: 0;
+      }
+    </style>
+
+    <div class="box-g box5">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+    <style>
+      .box5 {
+        display: flex;
+        flex-direction: column;
+        /* column; = 세로 방향 정렬 | 엄마 태그에 적용 */
+        /* column-reverse; = 세로 반대 방향 정렬 (아래에서 위쪽으로) | 엄마 태그에 적용 */
+        /* row = 가로 방향 정렬 | 엄마 태그에 적용 */
+        /* row-reverse; = 가로 반대 방향 정렬 (오른쪽에서 왼쪽으로) | 엄마 태그에 적용 */
+      }
+      .box5 div {
+        margin-bottom: 10px;
+      }
+      .box5 div:last-child {
+        margin-bottom: 0;
+      }
+    </style>
+
+    <div class="box-g box6">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+      <div>9</div>
+      <div>10</div>
+      <div>11</div>
+      <div>12</div>
+    </div>
+    <style>
+      .box6 {
+        display: flex;
+        flex-wrap: wrap;
+      }
+    </style>
+
+    <div class="box-g box7">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+    <style>
+      .box7 {
+        display: flex;
+        justify-content: center;
+      }
+    </style>
+
+    <div class="box-g box8">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+    <style>
+      .box8 {
+        display: flex;
+        justify-content: flex-start;
+      }
+    </style>
+
+    <div class="box-g box9">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+    <style>
+      .box9 {
+        display: flex;
+        justify-content: flex-end;
+      }
+    </style>
+
+    <div class="box-g box10">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+    <style>
+      .box10 {
+        display: flex;
+        justify-content: space-around;
+      }
+    </style>
+
+    <div class="box-g box11">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+    <style>
+      .box11 {
+        display: flex;
+        justify-content: space-between;
+      }
+    </style>
+
+    <div class="box-g box12">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+    <style>
+      .box12 {
+        display: flex;
+        height: 400px;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
+
+    <br /><br /><br />
+    <hr />
+    <br /><br /><br />
+
+    <h2>items</h2>
+    <br />
+    <div class="box-g box13">
+      <!-- order: ; = 순서 바꾸기 -->
+      <div style="order: 3">1</div>
+      <div style="order: 1">2</div>
+      <div style="order: 2">3</div>
+    </div>
+    <style>
+      .box13 {
+        display: flex;
+      }
+    </style>
+
+    <br /><br /><br />
+    <hr />
+    <br /><br /><br />
+  </body>
+</html>
