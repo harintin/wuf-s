@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Just쇼핑몰</title>
+    <link rel="stylesheet" href="./comm.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- 클래스 잡을 때 첫글자가 숫자면 안됨 -->
@@ -12,7 +19,9 @@
       <header class="header">
         <!-- 로고 타이틀 -->
         <h1 class="logo">
-          <a href="#">Just쇼핑몰</a>
+          <a href="#">
+            <img src="./img/title_logo_justshopping.png" alt="Just Shopping" />
+          </a>
         </h1>
         <!-- h2는 굳이 쓸 필요 없지만 시각장애인들을 위해 넣어주는 것이 좋음 -->
         <h2>메인 메뉴</h2>
@@ -20,39 +29,39 @@
         <nav class="gnb">
           <ul class="depth1">
             <li>
-              <a href="#">탑</a>
+              <a href="#">Top</a>
               <ul class="depth2">
-                <li><a href="#">블라우스</a></li>
-                <li><a href="#">티</a></li>
-                <li><a href="#">셔츠</a></li>
-                <li><a href="#">니트</a></li>
+                <li><a href="#">TEE</a></li>
+                <li><a href="#">SHIRT</a></li>
+                <li><a href="#">SLEEVELESS</a></li>
+                <li><a href="#">HOODIE</a></li>
               </ul>
             </li>
             <li>
-              <a href="#">아우터</a>
+              <a href="#">Bottom</a>
               <ul class="depth2">
-                <li><a href="#">자켓</a></li>
-                <li><a href="#">코트</a></li>
-                <li><a href="#">가디건</a></li>
-                <li><a href="#">머플러</a></li>
+                <li><a href="#">LONG-PANTS</a></li>
+                <li><a href="#">SHORT-PANTS</a></li>
+                <li><a href="#">SKIRT</a></li>
+                <li><a href="#">JEANS</a></li>
               </ul>
             </li>
             <li>
-              <a href="#">팬츠</a>
+              <a href="#">Outer</a>
               <ul class="depth2">
-                <li><a href="#">청바지</a></li>
-                <li><a href="#">짧은바지</a></li>
-                <li><a href="#">긴바지</a></li>
-                <li><a href="#">레깅스</a></li>
+                <li><a href="#">CARDIGAN</a></li>
+                <li><a href="#">WINDBREAKER</a></li>
+                <li><a href="#">JACKET</a></li>
+                <li><a href="#">ZIP-UP</a></li>
               </ul>
             </li>
             <li>
-              <a href="#">악세서리</a>
+              <a href="#">Acc</a>
               <ul class="depth2">
-                <li><a href="#">귀고리</a></li>
-                <li><a href="#">목걸이</a></li>
-                <li><a href="#">반지</a></li>
-                <li><a href="#">팔찌</a></li>
+                <li><a href="#">BAG</a></li>
+                <li><a href="#">NECKLESS</a></li>
+                <li><a href="#">RING</a></li>
+                <li><a href="#">SHOES</a></li>
               </ul>
             </li>
           </ul>
@@ -60,29 +69,44 @@
       </header>
       <main class="main">
         <div class="slide">
-          <div class="slide1">slide1</div>
-          <div class="slide2">slide2</div>
-          <div class="slide3">slide3</div>
+          <div class="slide1">
+            <a href="#">
+              <img src="./img/Just 쇼핑몰 - slide1.jpg" alt="썸머페스티벌" />
+            </a>
+          </div>
+          <div class="slide2">
+            <a href="#">
+              <img
+                src="./img/Just-쇼핑몰---slide2.jpg"
+                alt="썸머무드인스타그램리뷰이벤트"
+              />
+            </a>
+          </div>
+          <div class="slide3">
+            <a href="#">
+              <img src="./img/Just-쇼핑몰---slide3.jpg" alt="y2k신상아이템" />
+            </a>
+          </div>
         </div>
         <div class="contents">
           <!-- 공지사항 & 갤러리 -->
           <div class="tabs">
             <section class="bbs">
-              <h3>공지사항</h3>
+              <h3 class="notice">공지사항</h3>
               <div class="cont">
                 <ul>
                   <li>
-                    <a href="#">모바일 APP 설치하고 10% 할인쿠폰 받자!</a>
+                    <a href="#">[Just Shopping] 배송/교환/반품 안내</a>
                   </li>
                   <li>
-                    <a href="#">자동로그인이 자꾸 풀려요</a>
+                    <a href="#">[Just Shopping] 사이즈 측정/세탁방법 안내</a>
                   </li>
                   <li>
-                    <a href="#">품절, 배송지연 보상제도 </a>
+                    <a href="#">품절/배송지연 보상제도 </a>
                   </li>
                   <li>
                     <a href="#"
-                      >앱 설치 자동로그인 설정 & 푸시 알림 설정 안내</a
+                      >카카오톡 플러스 친구/인스타그램 팔로우 혜택 안내</a
                     >
                   </li>
                   <li>
@@ -94,7 +118,7 @@
               </div>
             </section>
             <section class="gallery">
-              <h3>갤러리</h3>
+              <h3 class="gal">갤러리</h3>
               <div class="cont">
                 <ul>
                   <li>
@@ -116,16 +140,16 @@
           <!-- 배너 -->
           <div class="bnr">
             <a href="#">
-              <img src="#" alt="배너1" />
+              <img src="./img/banner.jpg" alt="배너1" />
             </a>
           </div>
           <!-- 바로가기 -->
           <div class="goto">
             <ul>
+              <li><a href="#">Review</a></li>
               <li><a href="#">Q&A</a></li>
-              <li><a href="#">REVIEW</a></li>
-              <li><a href="#">EVENT</a></li>
-              <li><a href="#">배송조회</a></li>
+              <li><a href="#">Event</a></li>
+              <li><a href="#">Order</a></li>
             </ul>
           </div>
         </div>

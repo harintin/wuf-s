@@ -1,0 +1,162 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  line-height: 1.5;
+  color: #333333;
+  font-family: "Roboto", "Noto Sans KR", sans-serif;
+}
+.wrap {
+  width: 1200px;
+  margin: 0 auto;
+  background: #ffffff;
+}
+
+/* header */
+
+.header {
+  width: 100%;
+  height: 100px;
+  background: rgb(255, 255, 255);
+  border-bottom: 1px solid #ff77a7;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+.logo {
+  display: flex;
+  align-items: center;
+  background: white;
+}
+.logo a {
+  display: block;
+  width: 200px;
+  height: 40px;
+}
+h2 {
+  visibility: hidden;
+}
+
+/* nav */
+
+.gnb .depth1 {
+  display: flex;
+  font-size: 16px;
+}
+.gnb .depth1 li {
+  text-align: center;
+  padding: 0px;
+}
+.gnb .depth1 > li > a {
+  height: 100px;
+  padding-top: 50px;
+}
+.gnb .depth1 a {
+  display: block;
+  padding: 0px;
+  width: 170px;
+  line-height: 40px;
+  text-align: center;
+  color: #ff77a7;
+}
+.gnb .depth1:hover .depth2 {
+  display: block;
+}
+/* nav depth2 */
+.gnb .depth2 {
+  display: none;
+  padding: 40 0px;
+  background: #ffb2cd;
+}
+.gnb .depth2 a {
+  width: 170px;
+  padding: 10px;
+  color: #ffffff;
+}
+.gnb .depth1 li > a:hover {
+  color: #333333;
+}
+.gnb .depth1 > li > a:hover {
+  border-bottom: 3px solid #ff77a7;
+}
+
+/* slide */
+
+.slide a {
+  display: block;
+}
+.slide {
+  overflow: hidden;
+  height: 300px;
+}
+.slide a,
+.slide img {
+  display: block;
+}
+
+/* content */
+
+.contents {
+  display: flex;
+  justify-content: space-between;
+}
+.contents {
+  margin: 10px;
+}
+.tabs {
+  width: 360px;
+}
+.notice {
+  background: #ffb0ce;
+  border-radius: 10px;
+  width: 70px;
+  height: 20px;
+  text-align: center;
+  color: #ffffff;
+  font-size: 14px;
+  margin: 10px;
+}
+.cont {
+  color: #333333;
+  font-size: 13px;
+}
+.cont ul li {
+  height: 25px;
+  border-bottom: 1px solid #ffddea;
+  margin-bottom: 10px;
+}
+.gal {
+  background: #ffb0ce;
+  border-radius: 10px;
+  width: 70px;
+  height: 20px;
+  text-align: center;
+  color: #ffffff;
+  font-size: 14px;
+  margin: 10px;
+}
+.bnr {
+  width: 400px;
+  margin-top: 30px;
+}
+.bnr a,
+.bnr img {
+  display: block;
+}
+.goto {
+  width: 360px;
+}
+.tabs .bbs .cont {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+/* footer */
+
+.footer {
+  display: flex;
+}
