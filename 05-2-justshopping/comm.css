@@ -1,0 +1,283 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  line-height: 1.5;
+  color: #333333;
+  font-family: "Roboto", "Noto Sans KR", sans-serif;
+}
+.wrap {
+  width: 1200px;
+  margin: 0 auto;
+  background: #ffffff;
+}
+
+/* header */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  background: white;
+  border-bottom: 1px solid #ff77a7;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  background: white;
+}
+.logo a {
+  display: block;
+  width: 200px;
+  height: 40px;
+}
+
+/* nav */
+
+/* nav depth1 */
+.gnb .depth1 {
+  display: flex;
+  font-size: 16px;
+}
+.gnb .depth1 > li > a {
+  display: block;
+  height: 100px;
+  padding: 0 50px;
+  line-height: 100px;
+  text-align: center;
+  color: #ff77a7;
+}
+
+/* depth1에 마우스 오버 했을 때 */
+.gnb .depth1 > li > a:hover {
+  /* background: white; */
+  border-bottom: 3px solid #ff77a7;
+}
+/* depth2에 마우스 오버 했을 때 */
+.gnb .depth1:hover.depth2 {
+  display: block;
+}
+
+/* nav depth2 */
+.gnb .depth2 {
+  display: none;
+  padding: 40 0px;
+  background: #ffb2cd;
+}
+.gnb .depth2 a {
+  display: block;
+  width: 170px;
+  padding: 10px;
+  text-align: center;
+  color: #ffffff;
+}
+.gnb .depth1 li > a:hover {
+  color: #666666;
+}
+
+/* slide */
+
+.slide {
+  overflow: hidden;
+  height: 300px;
+}
+.slide a,
+.slide img {
+  display: block;
+}
+
+/* contents */
+
+.contents {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+/* tabs-wrap */
+
+.tabs-wrap {
+  position: relative;
+  display: flex;
+  width: calc(100% / 2 - 230px);
+}
+.tabs-wrap .tab-item {
+  width: 50%;
+}
+/* 활성화 */
+.tabs-wrap .tab-item.on .tit {
+  background: #ffb0ce;
+  border-radius: 20px;
+  width: 60px;
+  height: 22px;
+  text-align: center;
+  color: #ffffff;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+.tabs-wrap .tab-item .cont {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  right: 0;
+  height: 130px;
+  /* background: lightcoral; */
+}
+/* 비활성화 - 탭 중에 당장 사용하지 않음 */
+.tabs-wrap .tab-item .tit {
+  background: #ffffff;
+  border-radius: 20px;
+  width: 80px;
+  height: 22px;
+  text-align: center;
+  color: #666666;
+  font-size: 16px;
+}
+.tabs-wrap .on .cont {
+  display: block;
+}
+.list-bbs {
+  padding-top: 13px;
+}
+.lst-bbs li {
+  display: flex;
+  align-items: center;
+}
+.lst-bbs li::before {
+  content: "";
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  margin-top: -4px;
+  margin-right: 10px;
+  background: #ffb0ce;
+}
+.list-bbs li a {
+  display: block;
+  line-height: 2;
+}
+.lst-bbs li a:hover {
+  text-decoration: underline;
+}
+/* 갤러리 */
+.lst-gallery {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 5px;
+}
+.lst-gallery li {
+  width: 92px;
+}
+.lst-gallery li p {
+  white-space: nowrap;
+  overflow: hidden;
+}
+.bnr {
+  width: 400px;
+}
+.bnr a,
+.bnr img {
+  display: block;
+}
+.goto {
+  width: calc(100% / 2 - 230px);
+}
+.goto ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  height: 180px;
+}
+.goto li {
+  width: calc(50% - 5px);
+  height: calc(50% - 5px);
+  background: #ffddea;
+  border: 2px solid #ffb0ce;
+  box-sizing: border-box;
+}
+.goto a {
+  display: block;
+  height: 100%;
+  background: #ffddea;
+}
+/* banner */
+
+/* footer */
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  border-top: 1px solid #d7d7d7;
+}
+
+.logo-foot a {
+  display: flex;
+  align-items: center;
+  height: 100px;
+}
+
+.lst-sns {
+  display: flex;
+}
+
+.lst-sns li {
+  margin-left: 20px;
+}
+
+.lst-sns a {
+  display: block;
+  line-height: 100px;
+  height: 100px;
+}
+
+/* modal */
+.modal-dimmed {
+  display: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgb(0, 0, 0, 0.5);
+  /* z-index: 10; */
+}
+
+.modal-dimmed .modal-box {
+  position: relative;
+  width: 500px;
+  height: 300px;
+  padding: 30px;
+  border: 1px solid #eee;
+  background: #ffff;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.modal-box h3 {
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+
+.modal-box button {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  width: 50px;
+  height: 50px;
+  background: black;
+  border-radius: 50%;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}

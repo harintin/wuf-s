@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Just쇼핑몰</title>
+    <title>Just Shopping</title>
     <link rel="stylesheet" href="./comm.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,19 +13,15 @@
     />
   </head>
   <body>
-    <!-- 클래스 잡을 때 첫글자가 숫자면 안됨 -->
-    <!-- 의미있는 마크업, 클래스 이름 다 잡아주기 -->
     <div class="wrap">
       <header class="header">
-        <!-- 로고 타이틀 -->
+        <!-- 로고 -->
         <h1 class="logo">
           <a href="#">
             <img src="./img/title_logo_justshopping.png" alt="Just Shopping" />
           </a>
         </h1>
-        <!-- h2는 굳이 쓸 필요 없지만 시각장애인들을 위해 넣어주는 것이 좋음 -->
-        <h2>메인 메뉴</h2>
-        <!-- nav 태그는 네비게이션 넣을 때 사용 -->
+        <!-- 네비게이션 -->
         <nav class="gnb">
           <ul class="depth1">
             <li>
@@ -88,13 +84,15 @@
             </a>
           </div>
         </div>
+
         <div class="contents">
-          <!-- 공지사항 & 갤러리 -->
           <div class="tabs-wrap">
-            <section class="tabs-item">
-              <h3 class="notice">공지사항</h3>
+            <!-- 공지사항 tab -->
+            <div class="tab-item">
+              <h3 class="tit">공지사항</h3>
               <div class="cont">
-                <ul>
+                <!-- 공지사항 리스트 -->
+                <ul class="lst-bbs">
                   <li>
                     <a href="#">[Just Shopping] 배송/교환/반품 안내</a>
                   </li>
@@ -116,33 +114,45 @@
                   </li>
                 </ul>
               </div>
-            </section>
-            <section class="gallery">
-              <h3 class="gal">갤러리</h3>
+            </div>
+
+            <!-- 갤러리 tab -->
+            <div class="tab-item on">
+              <h3 class="tit">갤러리</h3>
+              <!-- <div class="cont">갤러리 내용</div> -->
               <div class="cont">
-                <ul>
+                <!-- 썸네일 리스트 -->
+                <ul class="lst-gallery">
                   <li>
-                    <img src="이미지경로" alt="" />
-                    <a href="#">반값팬츠</a>
+                    <a href="#">
+                      <img src="./img/상품1.jpg" alt="이미지1" />
+                      <p>이미지1이미지1이미지1이미지1이미지1</p>
+                    </a>
                   </li>
                   <li>
-                    <img src="이미지경로" alt="" />
-                    <a href="#">반값팬츠</a>
+                    <a href="#">
+                      <img src="./img/상품2.jpg" alt="이미지2" />
+                      <p>이미지1이미지1이미지1이미지1이미지1</p>
+                    </a>
                   </li>
                   <li>
-                    <img src="이미지경로" alt="" />
-                    <a href="#">반값팬츠</a>
+                    <a href="#">
+                      <img src="./img/상품3.jpg" alt="이미지3" />
+                      <p>이미지1이미지1이미지1이미지1이미지1</p>
+                    </a>
                   </li>
                 </ul>
               </div>
-            </section>
+            </div>
           </div>
+
           <!-- 배너 -->
           <div class="bnr">
             <a href="#">
-              <img src="./img/banner.jpg" alt="배너1" />
+              <img src="./img/banner.jpg" alt="검색창" />
             </a>
           </div>
+
           <!-- 바로가기 -->
           <div class="goto">
             <ul>
@@ -155,13 +165,10 @@
         </div>
       </main>
       <footer class="footer">
-        <!-- 로고 풋터용 -->
         <div class="logo-foot">
           <a href="#">로고 풋터용</a>
         </div>
-        <!-- 카피라이트 -->
-        <div class="copyright">&copy;카피라이트</div>
-        <!-- sns 바로가기 -->
+        <div class="copyright">&#169;copyright</div>
         <div class="sns">
           <ul>
             <li><a href="#">facebook</a></li>
@@ -174,7 +181,7 @@
     </div>
     <!-- modal -->
     <div id="modal" class="dimmed">
-      <div class="madal-box">
+      <div class="modal-box">
         <h3>모달창 제목</h3>
         <p>모달창 내용</p>
         <button>닫기</button>
