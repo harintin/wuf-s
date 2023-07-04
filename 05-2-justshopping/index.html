@@ -64,25 +64,36 @@
         </nav>
       </header>
       <main class="main">
-        <div class="slide">
-          <div class="slide1">
-            <a href="#">
-              <img src="./img/Just 쇼핑몰 - slide1.jpg" alt="썸머페스티벌" />
-            </a>
-          </div>
-          <div class="slide2">
-            <a href="#">
-              <img
-                src="./img/Just-쇼핑몰---slide2.jpg"
-                alt="썸머무드인스타그램리뷰이벤트"
-              />
-            </a>
-          </div>
-          <div class="slide3">
-            <a href="#">
-              <img src="./img/Just-쇼핑몰---slide3.jpg" alt="y2k신상아이템" />
-            </a>
-          </div>
+        <!-- 조부모 -->
+        <div class="slide-wrap">
+          <!-- 부모 -->
+          <ul class="lst-slide">
+            <!-- 자식 -->
+            <li>
+              <a href="#">
+                <img
+                  src="./img/Just 쇼핑몰 - slide1.jpg"
+                  alt="첫번째슬라이드"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img
+                  src="./img/Just-쇼핑몰---slide2.jpg"
+                  alt="두번째슬라이드"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img
+                  src="./img/Just-쇼핑몰---slide3.jpg"
+                  alt="세번째슬라이드"
+                />
+              </a>
+            </li>
+          </ul>
         </div>
 
         <div class="contents">
@@ -126,19 +137,19 @@
                   <li>
                     <a href="#">
                       <img src="./img/상품1.jpg" alt="이미지1" />
-                      <p>이미지1이미지1이미지1이미지1이미지1</p>
+                      <p>FLAT NYLON CARGO PANTS</p>
                     </a>
                   </li>
                   <li>
                     <a href="#">
                       <img src="./img/상품2.jpg" alt="이미지2" />
-                      <p>이미지1이미지1이미지1이미지1이미지1</p>
+                      <p>PUFFY SQUAR NECK SLEEVELESS</p>
                     </a>
                   </li>
                   <li>
                     <a href="#">
                       <img src="./img/상품3.jpg" alt="이미지3" />
-                      <p>이미지1이미지1이미지1이미지1이미지1</p>
+                      <p>FAIR CROP COLLAR JERSEY</p>
                     </a>
                   </li>
                 </ul>
@@ -166,25 +177,31 @@
       </main>
       <footer class="footer">
         <div class="logo-foot">
-          <a href="#">로고 풋터용</a>
+          <a href="#"
+            ><img src="./img/title_logo_justshopping.png" alt="Just쇼핑몰"
+          /></a>
         </div>
         <div class="copyright">&#169;copyright</div>
         <div class="sns">
-          <ul>
+          <ul class="lst-sns">
             <li><a href="#">facebook</a></li>
             <li><a href="#">instagram</a></li>
             <li><a href="#">youtube</a></li>
-            <li><a href="#">blog</a></li>
           </ul>
         </div>
       </footer>
     </div>
     <!-- modal -->
-    <div id="modal" class="dimmed">
+    <!-- modal은 항상 맨 뒤에 코딩하여야 함. -->
+    <div id="modal" class="modal-dimmed">
       <div class="modal-box">
         <h3>모달창 제목</h3>
-        <p>모달창 내용</p>
-        <button>닫기</button>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus
+          fuga dolores iste quam libero sunt facilis in, ea sit aspernatur
+          labore! Neque rerum illo quo voluptas, et provident qui assumenda.
+        </p>
+        <button>X</button>
       </div>
     </div>
   </body>
