@@ -1,37 +1,191 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>background | css</title>
     <style>
       * {
-        margin: 0px;
-        padding: 0px;
+        margin: 0;
+        padding: 0;
         line-height: 1.5;
         text-decoration: none;
-        list-style: none;
         box-sizing: border-box;
-        /* 안전 글꼴 */
-        font-family: "Noto Sans KR", "Malgun Gothic", sans-serif;
+        list-style: none;
+        color: white;
       }
     </style>
   </head>
   <body>
     <h1>background</h1>
-    <strong>background color</strong>
-    <div class="bg1">background color</div>
+    <br /><br /><br />
+    <hr />
+    <br /><br /><br />
+
+    <h2>background-attachment</h2>
+    <br />
+    <div class="box2"></div>
+    <style>
+      .box2 {
+        width: 80%;
+        height: 500px;
+        background-image: url(https://images.unsplash.com/photo-1688499153976-7573901224ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80);
+        background-attachment: fixed;
+        background-size: 100%;
+        background-repeat: no-repeat;
+      }
+    </style>
+
+    <br /><br /><br />
+    <hr />
+    <br /><br /><br />
+
+    <h2>background-color</h2>
+    <br />
+    <div class="bg1">background-color</div>
 
     <style>
       body {
-        background-color: #19191a;
-        color: #ffffff;
+        background-color: rgb(33, 33, 33);
+        color: white;
       }
       .bg1 {
         width: 100%;
-        height: 100%;
-        background-color: #a3afc4;
+        height: 100px;
+        background-color: rgb(255, 164, 199);
       }
     </style>
+
+    <h2>background-image</h2>
+    <br />
+    <div class="box1"></div>
+    <style>
+      .box1 {
+        width: 700px;
+        height: 700px;
+        border: 10px solid #000;
+        background-color: #fff;
+        background-image: url("https://avatars.githubusercontent.com/u/10627436?v=4");
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+        background-size: 200px auto;
+      }
+    </style>
+
+    <br /><br /><br />
+    <hr />
+    <br /><br /><br />
+
+    <h2>background-size</h2>
+    <br />
+    <div class="box box3"></div>
+    <br />
+    <div class="box box4"></div>
+
+    <style>
+      .box {
+        width: 800px;
+        height: 300px;
+        border: 5px solid #ffffff;
+        background-image: url("https://avatars.githubusercontent.com/u/10627436?v=4");
+        background-repeat: no-repeat;
+      }
+      .box3 {
+        background-size: contain;
+        /* logo, 아이콘 이미지 등을 백그라운드로 집어넣음 (잘리면 안되는 이미지) */
+      }
+      .box4 {
+        background-size: cover;
+        /* 조건 상관없이 배경을 꽉 채우는 태그 : 배경 이미지 등 */
+        background-position: 0 -180px;
+      }
+    </style>
+
+    <br /><br /><br />
+    <hr />
+    <br /><br /><br />
+
+    <h2>image sprite</h2>
+
+    <br /><br /><br />
+
+    <div class="wrap">
+      <div class="img-g sprite1"></div>
+      <br />
+      <div class="img-g sprite2"></div>
+      <br />
+      <div class="img-g sprite3"></div>
+      <br />
+      <div class="img-g sprite4"></div>
+      <br />
+      <div class="img-g sprite5"></div>
+      <br />
+      <div class="img-g sprite6"></div>
+    </div>
+
+    <style>
+      .wrap {
+        width: 80%;
+        display: flex;
+        justify-content: space-around;
+      }
+      .img-g {
+        background-image: url(./images/image-sprite.png);
+        background-repeat: no-repeat;
+      }
+      .sprite1 {
+        width: 134px;
+        height: 132px;
+        background: url(./images/image-sprite.png) no-repeat 0 0;
+      }
+      .sprite2 {
+        width: 40px;
+        height: 38px;
+        background: url(./images/image-sprite.png) no-repeat -140px 0;
+        /* 포지션 px 단위 꼭 넣기 */
+      }
+      .sprite3 {
+        width: 40px;
+        height: 40px;
+        background: url(./images/image-sprite.png) no-repeat -140px -40px;
+        /* 포지션 px 단위 꼭 넣기 */
+      }
+      .sprite3:hover {
+        width: 40px;
+        height: 40px;
+        background: url(./images/image-sprite.png) no-repeat -140px -240px;
+        cursor: pointer;
+      }
+      .sprite4 {
+        width: 40px;
+        height: 29px;
+        background: url(./images/image-sprite.png) no-repeat -140px -80px;
+        /* 포지션 px 단위 꼭 넣기 */
+      }
+      .sprite5 {
+        width: 40px;
+        height: 40px;
+        background: url(./images/image-sprite.png) no-repeat -140px -120px;
+        /* 포지션 px 단위 꼭 넣기 */
+      }
+      .sprite6 {
+        width: 40px;
+        height: 40px;
+        background: url(./images/image-sprite.png) no-repeat -200px 0px;
+        /* 포지션 px 단위 꼭 넣기 */
+      }
+      .sprite6:hover {
+        width: 40px;
+        height: 40px;
+        background: url(./images/image-sprite.png) no-repeat -280px 0px;
+        cursor: pointer;
+        /* 포지션 px 단위 꼭 넣기 */
+      }
+    </style>
+
+    <br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br />
   </body>
 </html>
