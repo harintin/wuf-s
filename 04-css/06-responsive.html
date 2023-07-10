@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive | css</title>
+    <!-- 반응형 홈페이지 제작 -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-decoration: none;
+        box-sizing: border-box;
+        color: #333333;
+        line-height: 1.5;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Responsive</h1>
+
+    <br /><br /><br />
+
+    <h2>Responsive MQ | 반응형 미디어쿼리</h2>
+
+    <br /><br /><br />
+
+    <div class="box-g box1">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+
+    <style>
+      .box-g div {
+        height: 300px;
+        border: 1px solid #4c4c4c;
+        background: #f6dadf;
+        text-align: center;
+      }
+      .box1 {
+        display: flex;
+      }
+      .box1 div {
+        flex-grow: 1;
+      }
+
+      /* desktop to mobile */
+      @media screen and (max-width: 600px) {
+        .box1 {
+          flex-direction: column;
+        }
+      }
+    </style>
+
+    <br /><br /><br />
+
+    <div class="box-g box2">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+
+    <!-- mobile to desktop -->
+    <style>
+      @media screen and (min-width: 600px) {
+        .box2 div {
+          float: left;
+          width: 33.333%;
+        }
+      }
+    </style>
+
+    <br /><br /><br />
+    <br /><br /><br />
+    <hr />
+    <br /><br /><br />
+    <br /><br /><br />
+
+    <!-- website layout -->
+    <h2>website layout</h2>
+
+    <br /><br /><br />
+
+    <div class="wrap">
+      <header class="box">
+        <h1>logo</h1>
+        <nav>navigation menu</nav>
+      </header>
+
+      <div class="container">
+        <div class="content box">content</div>
+        <div class="content box">content</div>
+        <div class="content box">content</div>
+      </div>
+
+      <footer class="box">
+        <h1>logo</h1>
+        <div class="copyright">copyright</div>
+        <div class="sns">sns</div>
+      </footer>
+    </div>
+
+    <style>
+      .box {
+        margin: 10px;
+        background: rgb(178, 178, 178);
+      }
+      .wrap {
+        margin: auto;
+        /* flex일 땐 margin: auto; 쓰면 안됨 */
+        width: 1200px;
+        padding: 20px;
+        background: rgb(247, 240, 227);
+      }
+      header {
+        display: flex;
+        justify-content: space-between;
+        height: auto;
+      }
+      .container {
+        display: flex;
+      }
+      .content {
+        flex-grow: 1;
+        height: 300px;
+        text-align: center;
+      }
+      footer {
+        display: flex;
+        justify-content: space-between;
+        height: 100px;
+      }
+
+      @media screen and (max-width: 1200px) {
+        .wrap {
+          width: 100%;
+        }
+      }
+      @media screen and (max-width: 600px) {
+        header {
+          flex-direction: column;
+        }
+      }
+      @media screen and (max-width: 600px) {
+        .container {
+          flex-direction: column;
+        }
+        .content {
+          height: auto;
+        }
+      }
+      @media screen and (max-width: 600px) {
+        footer {
+          flex-direction: column;
+        }
+      }
+    </style>
+
+    <br /><br /><br />
+    <br /><br /><br />
+    <hr />
+    <br /><br /><br />
+    <br /><br /><br />
+  </body>
+</html>

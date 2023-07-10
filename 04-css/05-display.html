@@ -270,5 +270,97 @@
     <br /><br /><br />
     <hr />
     <br /><br /><br />
+
+    <h2>Flex-Grow</h2>
+    <div class="box-g box14">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+
+    <style>
+      .box14 {
+        display: flex;
+      }
+      .box14 div {
+        width: auto;
+      }
+      .box14 div:first-child {
+        flex-grow: 1;
+      }
+      .box14 div:nth-child(2) {
+        flex-grow: 2;
+      }
+      .box14 div:last-child {
+        flex-grow: 3;
+      }
+    </style>
+
+    <br /><br /><br />
+    <hr />
+    <br /><br /><br />
+
+    <h2>Flex-Shrink</h2>
+    <div class="box-g box15">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+      <div>9</div>
+      <div>10</div>
+      <div>11</div>
+      <div>12</div>
+    </div>
+
+    <style>
+      .box15 {
+        display: flex;
+      }
+      .box15 div {
+        flex-shrink: 1;
+      }
+      .box15 div:nth-child(6) {
+        flex-shrink: 0;
+        background: #c7f2d7;
+      }
+    </style>
+
+    <br /><br /><br />
+    <hr />
+    <br /><br /><br />
+
+    <h2>Flex-Basis</h2>
+    <div class="box-g box16">
+      <div>가</div>
+      <div>가나</div>
+      <div>가나다라</div>
+    </div>
+
+    <style>
+      .box16 {
+        display: flex;
+      }
+      .box16 div {
+        /* flex-basis가 auto라면 글자의 갯수만큼 가로사이즈가 늘어나기 때문에 수치를 0으로 변경해야 함 */
+        flex-basis: 0;
+        width: auto;
+        text-align: center;
+      }
+      .box16 div:nth-child(-n + 2) {
+        flex-grow: 1;
+      }
+      .box16 div:last-child {
+        flex-grow: 2;
+        background: #c7f2d7;
+      }
+    </style>
+
+    <br /><br /><br />
+    <hr />
+    <br /><br /><br />
   </body>
 </html>
