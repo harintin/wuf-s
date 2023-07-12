@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transforms | css</title>
+</head>
+<body>
+    <h1>transforms</h1>
+
+    <div class="box-g">
+        <div class="t t1">translate</div>
+    </div>
+
+    <div class="box-g">
+        <div class="t t2">rotate</div>
+    </div>
+
+    <div class="box-g">
+        <div class="t t3">scale</div>
+    </div>
+
+    <div class="box-g">
+        <div class="t t4">skew</div>
+    </div>
+
+    <div class="box-g">
+        <div class="t t5"></div>
+    </div>
+    
+    <style>
+        .box-g {
+            width: 300px;
+            height: 300px;
+            background: lightgray;
+            margin: 100px;
+        }
+        .t {
+            width: 300px;
+            height: 300px;
+            background: red;
+            opacity: 0.5;
+            transition: transform 1s 0.5s;
+            transition-timing-function: ease-in-out;
+        }
+        .t1:hover {
+            transform: translate(50px, 50px);
+        }
+        .t2 {
+            transition-delay: 2s;
+        }
+        .t2:hover {
+            transform: rotate(-45deg);
+        }
+        .t3:hover {
+            transform: scale(0.7);
+        }
+        .t4:hover {
+            transform: skew(2deg, 50deg);
+        }
+        .t5:hover {
+            transform: translateX(30px) scale(0.8) rotate(45deg);
+        }
+    </style>
+    
+    <h2>3D transforms</h2>
+    <div class="box-g">
+        <div class="t t6">3D</div>
+    </div>
+
+    <style>
+        .box-g {
+            perspective: 500px;
+        }
+        .t6:hover {
+            transform: rotateX(150deg);
+        }
+    </style>
+
+</body>
+</html>
