@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Just쇼핑몰</title>
+    <title>Just Shopping</title>
+    <link rel="stylesheet" href="./css/comm.css" />
     <link rel="stylesheet" href="./comm.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,19 +14,15 @@
     />
   </head>
   <body>
-    <!-- 클래스 잡을 때 첫글자가 숫자면 안됨 -->
-    <!-- 의미있는 마크업, 클래스 이름 다 잡아주기 -->
     <div class="wrap">
       <header class="header">
-        <!-- 로고 타이틀 -->
+        <!-- 로고 -->
         <h1 class="logo">
           <a href="#">
-            <img src="./img/title_logo_justshopping.png" alt="Just Shopping" />
+            <img src="./img/title_logo_justshopping.png" alt="Just쇼핑몰" />
           </a>
         </h1>
-        <!-- h2는 굳이 쓸 필요 없지만 시각장애인들을 위해 넣어주는 것이 좋음 -->
-        <h2>메인 메뉴</h2>
-        <!-- nav 태그는 네비게이션 넣을 때 사용 -->
+        <!-- 네비게이션 -->
         <nav class="gnb">
           <ul class="depth1">
             <li>
@@ -68,81 +65,98 @@
         </nav>
       </header>
       <main class="main">
-        <div class="slide">
-          <div class="slide1">
-            <a href="#">
-              <img src="./img/Just 쇼핑몰 - slide1.jpg" alt="썸머페스티벌" />
-            </a>
-          </div>
-          <div class="slide2">
-            <a href="#">
-              <img
-                src="./img/Just-쇼핑몰---slide2.jpg"
-                alt="썸머무드인스타그램리뷰이벤트"
-              />
-            </a>
-          </div>
-          <div class="slide3">
-            <a href="#">
-              <img src="./img/Just-쇼핑몰---slide3.jpg" alt="y2k신상아이템" />
-            </a>
-          </div>
+        <!-- 조부모 -->
+        <div class="slide-wrap">
+          <!-- 부모 -->
+          <ul class="lst-slide">
+            <!-- 자식 -->
+            <li>
+              <a href="#">
+                <img
+                  src="./img/Just 쇼핑몰 - slide1.jpg"
+                  alt="첫번째슬라이드"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img
+                  src="./img/Just-쇼핑몰---slide2.jpg"
+                  alt="두번째슬라이드"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img
+                  src="./img/Just-쇼핑몰---slide3.jpg"
+                  alt="세번째슬라이드"
+                />
+              </a>
+            </li>
+          </ul>
         </div>
         <div class="contents">
-          <!-- 공지사항 & 갤러리 -->
           <div class="tabs-wrap">
-            <section class="tabs-item">
-              <h3 class="notice">공지사항</h3>
+            <!-- 공지사항 tab  -->
+            <div class="tab-item on">
+              <h3 class="tit">공지사항</h3>
               <div class="cont">
-                <ul>
+                <!-- 공지사항 list -->
+                <ul class="lst-bbs">
                   <li>
-                    <a href="#">[Just Shopping] 배송/교환/반품 안내</a>
+                    <a href="#"> [Just Shopping] 배송/교환/반품 안내 </a>
                   </li>
                   <li>
                     <a href="#">[Just Shopping] 사이즈 측정/세탁방법 안내</a>
                   </li>
                   <li>
-                    <a href="#">품절/배송지연 보상제도 </a>
+                    <a href="#">품절/배송지연 보상제도</a>
                   </li>
                   <li>
                     <a href="#"
                       >카카오톡 플러스 친구/인스타그램 팔로우 혜택 안내</a
                     >
                   </li>
-                  <li>
-                    <a href="#"
-                      >개인정보 처리방침 변경안내 (2021년 12월 02일 시행)</a
-                    >
-                  </li>
                 </ul>
               </div>
-            </section>
-            <section class="gallery">
-              <h3 class="gal">갤러리</h3>
+            </div>
+            <!-- 갤러리 tab -->
+            <div class="tab-item">
+              <h3 class="tit">갤러리</h3>
               <div class="cont">
-                <ul>
+                <!-- 썸네일 리스트 -->
+                <ul class="lst-gallery">
                   <li>
-                    <img src="이미지경로" alt="" />
-                    <a href="#">반값팬츠</a>
+                    <a href="#">
+                      <img src="./img/상품1.jpg" alt="상품1" />
+                      <p>FLAT NYLON CARGO PANTS</p>
+                    </a>
                   </li>
                   <li>
-                    <img src="이미지경로" alt="" />
-                    <a href="#">반값팬츠</a>
+                    <a href="#">
+                      <img src="./img/상품2.jpg" alt="상품2" />
+                      <p>PUFFY SQUAR NECK SLEEVELESS</p>
+                    </a>
                   </li>
                   <li>
-                    <img src="이미지경로" alt="" />
-                    <a href="#">반값팬츠</a>
+                    <a href="#">
+                      <img src="./img/상품3.jpg" alt="상품3" />
+                      <p>FAIR CROP COLLAR JERSEY</p>
+                    </a>
                   </li>
                 </ul>
               </div>
-            </section>
+            </div>
           </div>
+
           <!-- 배너 -->
           <div class="bnr">
             <a href="#">
-              <img src="./img/banner.jpg" alt="배너1" />
+              <img src="./img/banner.jpg" alt="검색어를 입력해주세요." />
             </a>
           </div>
+
           <!-- 바로가기 -->
           <div class="goto">
             <ul>
@@ -155,29 +169,32 @@
         </div>
       </main>
       <footer class="footer">
-        <!-- 로고 풋터용 -->
         <div class="logo-foot">
-          <a href="#">로고 풋터용</a>
+          <a href="#">
+            <img src="./img/title_logo_justshopping.png" alt="Just쇼핑몰" />
+          </a>
         </div>
-        <!-- 카피라이트 -->
-        <div class="copyright">&copy;카피라이트</div>
-        <!-- sns 바로가기 -->
+        <div class="copyright">&#169;copyright</div>
         <div class="sns">
-          <ul>
+          <ul class="lst-sns">
             <li><a href="#">facebook</a></li>
             <li><a href="#">instagram</a></li>
             <li><a href="#">youtube</a></li>
-            <li><a href="#">blog</a></li>
           </ul>
         </div>
       </footer>
     </div>
     <!-- modal -->
-    <div id="modal" class="dimmed">
-      <div class="madal-box">
+    <div id="modal" class="modal-dimmed">
+      <div class="modal-box">
         <h3>모달창 제목</h3>
-        <p>모달창 내용</p>
-        <button>닫기</button>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus,
+          consequuntur sed rerum similique iste error doloribus quas et delectus
+          est voluptatum rem tenetur, illo eveniet dolorem fuga quis
+          repellendus? Nam?
+        </p>
+        <button>X</button>
       </div>
     </div>
   </body>
