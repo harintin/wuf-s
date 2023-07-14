@@ -166,6 +166,7 @@
 .lst-bbs li {
   display: flex;
   align-items: center;
+  color: #666666;
 }
 .lst-bbs li::before {
   content: "";
@@ -241,6 +242,9 @@
   display: flex;
   align-items: center;
   height: 100px;
+}
+.copyright {
+  color: #d3d3d3;
 }
 .lst-sns {
   display: flex;

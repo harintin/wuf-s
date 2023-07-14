@@ -9,9 +9,10 @@
     <h1>Tooltip</h1>
     <div class="tooltip-wrap">
       tooltip 보기
-      <div class="tooltip-item">
-        이것은 툴팁입니다 어쩌구저쩌구쌸라쌸라라라라라
-      </div>
+      <div class="item top">Top</div>
+      <div class="item bottom">Bottom</div>
+      <div class="item left">Left</div>
+      <div class="item right">Right</div>
     </div>
 
     <style>
@@ -21,23 +22,77 @@
         margin: 100px;
         font-weight: bold;
         font-size: 20px;
-        color: rgb(185, 167, 217);
+        color: rgb(255, 255, 255);
         background: #000;
       }
-      .tooltip-item {
-        position: absolute;
-        top: 100%;
-        right: -60%;
+      .item {
         display: inline-block;
-        max-width: 100px;
+        width: 50px;
         font-size: 14px;
         font-weight: normal;
+        text-align: center;
         color: #fff;
         padding: 5px 10px;
-        background: #d1d1d1;
+        background: #b4cedc;
         border-radius: 5px;
         border: 1px solid #858585;
-        transform: translateX(-50%);
+        opacity: 0.8;
+      }
+      .item.top {
+        position: absolute;
+        top: -140%;
+        left: 17%;
+      }
+      .top::after {
+        position: absolute;
+        bottom: -10px;
+        left: 30px;
+        content: "";
+        border-width: 5px;
+        border-style: solid;
+        border-color: #858585 transparent transparent transparent;
+      }
+      .item.bottom {
+        position: absolute;
+        bottom: -140%;
+        left: 17%;
+      }
+      .bottom::after {
+        position: absolute;
+        bottom: -10px;
+        left: 30px;
+        content: "";
+        border-width: 5px;
+        border-style: solid;
+        border-color: #858585 transparent transparent transparent;
+      }
+      .item.left {
+        position: absolute;
+        top: -5%;
+        left: -70%;
+      }
+      .left::after {
+        position: absolute;
+        bottom: -10px;
+        left: 30px;
+        content: "";
+        border-width: 5px;
+        border-style: solid;
+        border-color: #858585 transparent transparent transparent;
+      }
+      .item.right {
+        position: absolute;
+        top: -5%;
+        right: -70%;
+      }
+      .right::after {
+        position: absolute;
+        bottom: -10px;
+        left: 30px;
+        content: "";
+        border-width: 5px;
+        border-style: solid;
+        border-color: #858585 transparent transparent transparent;
       }
     </style>
   </body>
