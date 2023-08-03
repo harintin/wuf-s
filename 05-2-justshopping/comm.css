@@ -133,9 +133,9 @@
 }
 
 /* 활성화 tab */
-.tabs-wrap .ton .tit {
+.tabs-wrap .on .tit {
   background: #ff9cbe;
-  color: #ffb2cd;
+  color: #ffffff;
 }
 
 .tabs-wrap .tab-item .cont {
@@ -176,6 +176,8 @@
 .list-bbs li a {
   display: block;
   line-height: 2;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .lst-bbs li a:hover {
@@ -184,8 +186,8 @@
 
 /* 갤러리 */
 .lst-gallery {
-  display: none;
-  visibility: hidden;
+  display: flex;
+  /* visibility: hidden; */
   justify-content: space-between;
   padding-top: 5px;
 }
