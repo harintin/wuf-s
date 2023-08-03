@@ -65,8 +65,8 @@
 .gnb .depth2 {
   /* display: none; */
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 100px;
+  left: 800px;
   padding: 40 0px;
   background: #ffb2cd;
 }
@@ -158,7 +158,9 @@
 
 .lst-bbs li {
   display: flex;
+  overflow: hidden;
   align-items: center;
+  margin: 5px 0;
 }
 
 .lst-bbs li::before {
@@ -182,7 +184,8 @@
 
 /* 갤러리 */
 .lst-gallery {
-  display: flex;
+  display: none;
+  visibility: hidden;
   justify-content: space-between;
   padding-top: 5px;
 }
@@ -266,7 +269,7 @@
 
 /* modal */
 .modal-dimmed {
-  display: none;
+  display: flex;
   justify-content: center;
   align-items: center;
   position: fixed;
@@ -275,6 +278,9 @@
   right: 0;
   bottom: 0;
   background: rgb(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
   /* z-index: 10; */
 }
 
@@ -287,6 +293,11 @@
   background: #ffff;
   border-radius: 10px;
   text-align: center;
+}
+
+.modal-dimmed.active {
+  visibility: visible;
+  opacity: 1;
 }
 
 .modal-box h3 {
