@@ -35,6 +35,8 @@ $(function () {
 
   // slide
   let now = 1;
+  const slideEls = $(".lst-slide");
+  let height = 100;
 
   // 3초마다 실행
   setInterval(function () {
@@ -45,8 +47,30 @@ $(function () {
     console.log("dd");
     // .lst-slide를 애니메이션(top: -300px)
     // 처음에는 -100%였다가 3초 후에 -200%가 되게
-    $(".lst-slide").animate({
-      top: 100 * now * -1 + "%",
-    });
+
+    // 변수 재선언
+
+    // 조건문
+    // now : 0 - 첫번째 슬라이드
+    // now : 1 - 두번째 슬라이드
+    // now : 2 - 세번째 슬라이드
+    // 참 : 만약 1, 2번째 슬라이드일 경우
+    // 거짓 : 3번째 슬라이드일 경우
+    if (now < 3) {
+      // 참일 경우
+      // 다음 슬라이드로 이동
+      slideEls.animate({
+        top: height * now * -1 + "%",
+      });
+      // 변수 재선언
+      now = now + 1;
+    } else {
+      // 거짓일 경우
+      // 첫번째 슬라이드로 이동
+      slideEls.animate({
+        top: 0,
+      });
+      now = 1;
+    }
   }
 });

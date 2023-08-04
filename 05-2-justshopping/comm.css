@@ -42,6 +42,9 @@
   display: flex;
   font-size: 16px;
 }
+.gnb .depth1 > li {
+  position: relative;
+}
 .gnb .depth1 > li > a {
   display: block;
   height: 100px;
@@ -61,25 +64,36 @@
   display: block;
 }
 
+.gnb .depth1 > li:hover > .depth2 {
+  opacity: 1;
+  padding: 10px 0;
+  height: 180px;
+}
+
 /* nav depth2 */
 .gnb .depth2 {
-  /* display: none; */
   position: absolute;
+  overflow: hidden;
   top: 100px;
-  left: 800px;
-  padding: 40 0px;
+  left: 0;
+  width: 100%;
+  height: 0;
+  padding: 0;
   background: #ffb2cd;
+  z-index: 1;
+  transition: height 0.2s;
 }
 
 .gnb .depth2 a {
   display: block;
-  width: 170px;
-  padding: 10px;
+  /* width: 170px; */
+  padding: 8px;
   text-align: center;
   color: #ffffff;
 }
 .gnb .depth1 li > a:hover {
   color: #666666;
+  height: 100%;
 }
 
 /* slide */
@@ -283,7 +297,7 @@
   opacity: 0;
   visibility: hidden;
   transition: all 0.3s;
-  /* z-index: 10; */
+  z-index: 10;
 }
 
 .modal-dimmed .modal-box {
