@@ -1,0 +1,119 @@
+.slide-intro {
+    margin-top: -70px;
+
+  .swiper-slide__txt {
+    position: absolute;
+    z-index: 1;
+    // top: auto;
+    // left: auto;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    transform: translate(-50%, -50%);
+    color: $w;
+    strong {
+      font-size: 35px;
+    }
+    p {
+      font-size: 16px;
+      opacity: 0.8;
+    }
+    a {
+      display: inline-block;
+      top: 30px;
+      padding: 0 20px;
+      color: $b;
+      background: $w;
+      font-size: 0.8571rem;
+      border: 1px solid rgba($w, 0.3);
+      border-radius: 30px;
+      line-height: 30px;
+      margin-top: 20px;
+    }
+  }
+}
+
+.list-event {
+  li {
+    margin-bottom: 50px;
+  }
+  img {
+    display: block;
+    width: 100%;
+    height: 300px;
+    margin-bottom: 10px;
+    object-fit: cover;
+    object-position: 50% 80%;
+  }
+  p {
+    text-align: center;
+    font-size: 1.1429rem;
+  }
+}
+
+//   텍스트 게시판
+//   이미지 게시판
+.lst-thumb {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  li {
+    width: calc(50% - $spacingList / 2);
+    margin-bottom: $spacingList;
+    .thumb-shopping {
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      // height: 200px;
+      border-radius: 4px;
+      &::before {
+        content: "";
+        display: block;
+        height: 0;
+        padding-top: 100%;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border-radius: inherit;
+        background: rgba($b, 0.03);
+        border: 1px solid rgba($b, 0.06);
+      }
+    }
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 50% 50%;
+      transition: transform 0.3s;
+    }
+  }
+  a {
+    &:hover {
+      img {
+        transform: scale(1.05);
+      }
+    }
+  }
+  .txt-shopping {
+    margin-top: 10px;
+    .txt-shopping__tit {
+      display: block;
+      margin-bottom: 5px;
+      font-size: 14px;
+      color: $titDefault;
+    }
+    .txt-shopping__desc {
+      font-size: 12px;
+    }
+  }
+}

@@ -1,0 +1,339 @@
+@charset "UTF-8";
+@import "variables", "mixin", "reset";
+
+// comm.scss(css) -
+// 공통요소 : header, footer, button, icon, box
+
+// 공통
+$hdWidth: 190px;
+$utilHeight: 40px;
+
+// layout
+.wrap {
+  position: relative;
+  display: flex;
+  height: 100vh;
+  transition: all 0.3s;
+}
+#header {
+  width: $hdWidth;
+  padding: 40px 0;
+  background: $w;
+  .inner {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+}
+#main {
+  width: calc(100% - $hdWidth);
+  padding-top: 40px;
+}
+
+@media screen and (max-width: 1440px) {
+  .wrap {
+    display: block;
+  }
+  #header {
+    display: block;
+    width: 100%;
+    padding: 0;
+    .inner {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+    }
+  }
+  #main {
+    width: 100%;
+    padding-top: 0;
+  }
+}
+
+// header
+#logo {
+  a {
+    display: block;
+    width: 150px;
+    height: 116px;
+    margin: 0 auto;
+    background: url(../../images/logo1.png) 0 0 / contain no-repeat;
+    text-indent: -9999px;
+  }
+}
+
+#gnb {
+  width: 100px;
+  margin: 70px auto 0;
+  .depth1 {
+    a {
+      display: block;
+      padding: 7px 20px;
+    }
+  }
+}
+
+.spot {
+  margin-top: auto;
+  .spot-g {
+    display: flex;
+    justify-content: center;
+    a {
+      display: block;
+      padding: 10px;
+    }
+  }
+  .contact {
+    a {
+      position: relative;
+      font-size: 0.75rem;
+      &:first-child::before {
+        display: none;
+      }
+      &::before {
+        content: "";
+        @include posY;
+        left: 0;
+        width: 1px;
+        height: 10px;
+        background: red;
+      }
+    }
+  }
+  .sns {
+    a {
+      display: block;
+      width: 31px;
+      height: 29px;
+      padding: 0;
+      text-indent: -9999px;
+    }
+    .facebook {
+      background: url(../../images/sns3.png) 0 0 no-repeat;
+    }
+    .twitter {
+      background: url(../../images/sns4.png) 0 0 no-repeat;
+    }
+    .instagram {
+      background: url(../../images/sns5.png) 0 0 no-repeat;
+    }
+  }
+}
+
+.util {
+  position: absolute;
+  top: 0;
+  left: $hdWidth;
+  right: 0;
+  height: $utilHeight;
+  background: $b;
+}
+
+// 미디어쿼리 1440px
+@media screen and (max-width: 1440px) {
+  #logo {
+    padding: 30px 0 0 25px;
+    a {
+      width: 250px;
+      height: 50px;
+      background: url(../../images/logo2.png) 0 0 no-repeat;
+    }
+  }
+  #gnb {
+    width: auto;
+    margin: 0;
+    .depth1 {
+      display: flex;
+      a {
+        height: 103px;
+        padding: 0 37px;
+        line-height: 103px;
+      }
+    }
+  }
+  .spot {
+    display: none;
+  }
+  .util {
+    position: static;
+    height: 50px;
+  }
+}
+
+// main
+
+// section
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  height: calc(100vh - $utilHeight);
+}
+.box-g {
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+  padding: 30px 20px;
+  strong {
+    text-transform: capitalize;
+  }
+  .tit-big {
+    position: absolute;
+    bottom: -32px;
+    right: -1px;
+    font-size: 6.25rem;
+    font-weight: 900;
+    color: rgba($w, 0.9);
+    letter-spacing: -3px;
+  }
+}
+.box-1 {
+  grid-column: 1 / span 3;
+  grid-row: 1 / span 2;
+  background: url(../../images/pic1.jpg) 50% 50% / cover no-repeat;
+}
+.box-2 {
+  grid-column: 4 / span 2;
+  background: pink;
+}
+.box-3 {
+  background: #c6f6fa;
+  &::after {
+    content: "\f2f9";
+    position: absolute;
+    bottom: -39px;
+    right: -9px;
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 6.25rem;
+    animation: fa-spin 2s infinite linear;
+  }
+}
+@keyframes fa-spin {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.box-4 {
+  background: rgba($prim1, 0.7);
+}
+.box-5 {
+  background: rgba($prim1, 0.6);
+}
+.box-6 {
+  grid-column: 2 / span 2;
+  background: rgba($prim1, 0.5);
+}
+.box-7 {
+  background: rgba($prim1, 0.4);
+}
+.box-8 {
+  background: rgba($prim1, 0.3);
+}
+.box-9 {
+  grid-column: 1 / span 2;
+  background: rgba($prim1, 0.2);
+}
+.box-10 {
+  background: rgba($prim1, 1);
+}
+.box-11 {
+  background: rgba($prim1, 0.9);
+}
+.box-12 {
+  background: rgba($prim1, 0.7);
+}
+
+@media screen and (max-width: 1440px) {
+  .grid {
+    height: calc(100vh - 153px);
+  }
+}
+@media screen and (max-width: 1280px) {
+  .grid {
+    height: auto;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+  }
+  .box-g {
+    height: 233px;
+  }
+  .box-1 {
+    height: auto;
+  }
+  .box-2 {
+    grid-column: auto;
+  }
+  .box-6 {
+    grid-column: 3 / span 2;
+  }
+  .box-7 {
+    grid-column: 1 / span 2;
+  }
+  .box-9 {
+    grid-column: 4 / span 1;
+  }
+  .box-10 {
+    grid-column: 1 / span 2;
+  }
+}
+
+@media screen and (max-width: 744px) {
+  #header {
+    position: fixed;
+    top: 50;
+    left: 0;
+    z-index: 10;
+    background: transparent;
+    .inner {
+      display: block;
+    }
+  }
+
+  #logo {
+    padding-bottom: 40px;
+    padding-left: 0;
+  }
+
+  #logo a {
+    width: 150px;
+    height: 116px;
+    background: url(../../images/logo1.png) 0 0 / contain no-repeat;
+  }
+  #gnb .depth1 {
+    display: block;
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      width: 60%;
+      max-width: 200px;
+      height: 48px;
+      margin-bottom: 20px;
+      background: rgba($color: $b, $alpha: 0.7);
+      border-radius: 10px;
+      color: $w;
+      text-align: center;
+    }
+  }
+  .util {
+    display: none;
+  }
+  .grid {
+    display: block;
+  }
+  .box-g {
+    display: none;
+  }
+  .box-1 {
+    display: block;
+    height: 100vh;
+    .tit-big {
+      display: none;
+    }
+  }
+}
