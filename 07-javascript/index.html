@@ -3,102 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Java Script 선행</title>
+    <title>javascript</title>
+    <!-- <script src="./1-js데이터.js"></script> -->
+    <!-- <script src="./2-연산자.js"></script> -->
+    <!-- <script src="./3-구문.js"></script> -->
+    <script src="./4-함수.js"></script>
   </head>
-  <body>
-    <h1>Java Script</h1>
-    <h2>문자 데이터</h2>
-    <p>String 문자 데이터 | 따옴표 사용하면 문자로 인식</p>
-    <script>
-      let myName = "harin";
-      let email = "semioi@naver.com";
-      let hello = `안녕! 나는 ${myName}이야`;
-      console.log(myName);
-      console.log(email);
-      console.log(hello);
-    </script>
-
-    <h2>불린 데이터</h2>
-    <p>Boolean 불린 데이터 | true, false 두 가지 값밖에 없는 논리 데이터</p>
-    <script>
-      let checked = true;
-      let isShow = false;
-
-      console.log("checked : " + checked);
-      console.log(`isShow : ${isShow}`);
-    </script>
-
-    <h2>Undefied</h2>
-    <p>값이 할당되지 않은 상태를 나타냄</p>
-    <script>
-      let undef;
-      let obj = { abc: 123 };
-
-      console.log(undef);
-      console.log(obj.abc);
-      console.log(obj.xyz);
-    </script>
-
-    <h2>Null</h2>
-    <p>의도적으로 비어있음</p>
-    <script>
-      let empty = null;
-      console.log(empty);
-    </script>
-
-    <h2>Object | 객체 데이터</h2>
-    <p>여러 데이터를 Key:Value 형태로 저장함</p>
-
-    <script>
-      let user = {
-        name: "harin",
-        age: 26,
-        isValid: true,
-      };
-      console.log(user.name);
-      console.log(user.age);
-      console.log(user.isValid);
-    </script>
-
-    <h2>Array | 배열데이터</h2>
-    <p>여러 데이터를 순차적으로 저장함</p>
-    <script>
-      let fruits = ["Apple", "Banana", "Cherry"];
-      console.log(fruits);
-      console.log(fruits[0]);
-      console.log(fruits[1]);
-      console.log(fruits[2]);
-    </script>
-
-    <h2>변수</h2>
-    <p>데이터를 저장하고 사용함 | 컴포넌트 같은 개념</p>
-    <h3>let</h3>
-    <p>재할당 가능</p>
-    <script>
-      let a = 5;
-      let b = 10;
-      console.log(`a: ${a}`);
-      console.log(a + b);
-      console.log(a - b);
-      console.log(a * b);
-      console.log(b / a);
-
-      a = 50;
-      console.log(`a: ${a}`);
-      console.log(a + b);
-      console.log(a - b);
-      console.log(a * b);
-      console.log(b / a);
-    </script>
-    <h3>const</h3>
-    <p>재할당 불가 | 재할당 시 에러메세지 뜸</p>
-    <script>
-      const c = 10;
-      console.log(`c: ${c}`);
-      console.log(c);
-
-      c = 20;
-      console.log(c);
-    </script>
-  </body>
+  <body></body>
 </html>
