@@ -42,3 +42,5 @@ function printCity(user) {
 }
 
 console.log(printCity(user2));
+
+// for 반복문
