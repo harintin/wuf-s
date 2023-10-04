@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="페이지 제목" />
+    <meta property="og:description" content="페이지 설명" />
+    <meta
+      property="og:image"
+      content="http://www.mysite.com/article/article1_featured_image.jpg"
+    />
+    <meta
+      property="og:url"
+      content="http://www.mysite.com/article/article1.html"
+    />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="페이지 제목" />
+    <meta name="twitter:description" content="페이지 설명" />
+    <meta
+      name="twitter:image"
+      content="http://www.mysite.com/article/article1.html"
+    />
+    <meta name="twitter:domain" content="사이트 명" />
+    <title>Onepage</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./dist/css/comm.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"
+      integrity="sha512-v/m68W+vaGN/6igoyFpd4GlQzu0jx9/n5gr2PKq5vif+RObyGKHse384YHrOULaxZ810XhlHUrmB3U8UnPB19Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script defer src="./dist/js/comm.js"></script>
+  </head>
+  <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+    <div class="wrap">
+      <header id="header" class="bg-light fixed-top">
+        <nav class="navbar navbar-expand-sm">
+          <div class="container-fluid">
+            <h1>
+              <a class="navbar-brand" href="#">Logo</a>
+            </h1>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapsibleNavbar"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="collapse navbar-collapse justify-content-end"
+              id="collapsibleNavbar"
+            >
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">about</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#service">service</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#portfolio">portfolio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact">contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <main id="main">
+        <div id="jumbotron" class="p-5 bg-primary text-white">
+          <div class="container">
+            <h1 data-aos="fade-in">이게뭐야</h1>
+            <p data-aos="fade-in">Lorem ipsum...</p>
+          </div>
+        </div>
+
+        <section id="about" class="sec-g">
+          <div class="container">
+            <div class="title d-flex justify-content-center mb-5">
+              <h2>about</h2>
+            </div>
+            <div class="row">
+              <!-- sm : 768px 기준 -->
+              <div class="col-sm-8">
+                <h2
+                  data-aos="fade-up"
+                  data-aos-delay="50"
+                  data-aos-duration="1000"
+                  data-aos-easing="ease-in-out"
+                  data-aos-mirror="true"
+                  data-aos-once="false"
+                  data-aos-anchor-placement="top-center"
+                >
+                  제목
+                </h2>
+                <p data-aos="fade-in">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Alias tempore veniam dolore consequuntur. Alias, praesentium
+                  magnam! Necessitatibus iste, fugit autem minima consequuntur
+                  sed, harum earum sint rerum quibusdam, culpa nobis.
+                </p>
+              </div>
+              <div class="col-sm-4">
+                <span class="glyphicon glyphicon-qrcode"></span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="service" class="bg-light sec-g">
+          <div class="container">
+            <div class="title d-flex justify-content-center mb-5">
+              <h2>service</h2>
+            </div>
+            <div class="row">
+              <div class="col-sm-4">
+                <h3>제목</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Alias tempore veniam dolore consequuntur. Alias, praesentium
+                  magnam! Necessitatibus iste, fugit autem minima consequuntur
+                  sed, harum earum sint rerum quibusdam, culpa nobis.
+                </p>
+              </div>
+              <div class="col-sm-4">
+                <h3>제목</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Alias tempore veniam dolore consequuntur. Alias, praesentium
+                  magnam! Necessitatibus iste, fugit autem minima consequuntur
+                  sed, harum earum sint rerum quibusdam, culpa nobis.
+                </p>
+              </div>
+              <div class="col-sm-4">
+                <h3>제목</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Alias tempore veniam dolore consequuntur. Alias, praesentium
+                  magnam! Necessitatibus iste, fugit autem minima consequuntur
+                  sed, harum earum sint rerum quibusdam, culpa nobis.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="portfolio" class="sec-g">
+          <div class="container">
+            <div class="title d-flex justify-content-center mb-5">
+              <h2>portfolio</h2>
+            </div>
+            <div class="row">
+              <div class="col-sm-4">
+                <img src="https://via.placeholder.com/350x150" alt="" />
+              </div>
+              <div class="col-sm-4">
+                <img src="https://via.placeholder.com/350x150" alt="" />
+              </div>
+              <div class="col-sm-4">
+                <img src="https://via.placeholder.com/350x150" alt="" />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="contact" class="bg-light sec-g">
+          <div class="container">ddddd</div>
+        </section>
+      </main>
+      <footer id="footer">
+        <div class="container">footer</div>
+      </footer>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

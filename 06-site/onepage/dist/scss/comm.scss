@@ -1,0 +1,34 @@
+:root {
+  --sm: 768px;
+  --md: 992px;
+  --lg: 1200px;
+
+  --bs-primary: rgb(215, 175, 202);
+  --bs-primary-rgb: 215, 175, 202;
+}
+
+$md: 768px;
+
+.sec-g {
+  padding: 100px 0;
+}
+.wrap {
+  padding-top: 70px;
+}
+// @media screen and (max-width: $md) {
+//     .wrap {
+//         padding-top: 71px;
+//     }
+// }
+
+#header {
+  height: 70px;
+  padding: 0 30px;
+}
+#jumbotron {
+  height: 50vh;
+}
+
+#contact {
+  height: 500px;
+}
